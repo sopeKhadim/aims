@@ -1,0 +1,56 @@
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{Web12}
+
+\bibitem[AST92]{AD92}
+Alan Adolphson, Steven Sperber, and Marvin Tretkoff (eds.), \emph{$p$-adic
+  methods in number theory and algebraic geometry}, Contemporary Mathematics,
+  no. 133, American Mathematical Society, Providence, RI, 1992.
+
+\bibitem[Bea06]{Beardon}
+Alan~F. Beardon, \emph{From problem solving to research}, 2006, Unpublished
+  manuscript.
+
+\bibitem[Dav99]{mcdthesis}
+M.~C. Davey, \emph{Error-correction using low-density parity-check codes}, Phd,
+  University of Cambridge, 1999.
+
+\bibitem[Lam86]{latex}
+Leslie Lamport, \emph{{\LaTeX \rm:} {A} document preparation system},
+  Addison-Wesley, 1986.
+
+\bibitem[Mac86]{MacKay86}
+D.~J.~C. MacKay, \emph{Statistical testing of high precision digitisers}, Tech.
+  Report 3971, Royal Signals and Radar Establishment, Malvern, Worcester. WR14
+  3PS, 1986.
+
+\bibitem[Mac95]{MacKay94:fe}
+D.~J.~C. MacKay, \emph{A free energy minimization framework for inference
+  problems in modulo 2 arithmetic}, Fast Software Encryption (Proceedings of
+  1994 K.U. Leuven Workshop on Cryptographic Algorithms) (B.~Preneel, ed.),
+  Lecture Notes in Computer Science Series, no. 1008, Springer, 1995,
+  pp.~179--195.
+
+\bibitem[MN95]{mnc4pfoutdated}
+D.~J.~C. MacKay and R.~M. Neal, \emph{Good codes based on very sparse
+  matrices}, Available from \url{www.inference.phy.cam.ac.uk}, 1995.
+
+\bibitem[Sha48]{Shannon48}
+C.~E. Shannon, \emph{A mathematical theory of communication}, Bell Sys. Tech.
+  J. \textbf{27} (1948), 379--423, 623--656.
+
+\bibitem[Sha93]{shannon44}
+\bysame, \emph{The best detection of pulses}, Collected Papers of Claude
+  Shannon (N.~J.~A. Sloane and A.~D. Wyner, eds.), IEEE Press, New York, 1993,
+  pp.~148--150.
+
+\bibitem[Web12]{Webots}
+Webots, \emph{Commercial mobile robot simulation software}, 2012,
+  \url{www.cyberbotics.com}.
+
+\end{thebibliography}
