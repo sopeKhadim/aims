@@ -1,3 +1,4 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
 \providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
 \providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
 % \MRhref is called by the amsart/book/proc definition of \MR.
@@ -5,52 +6,117 @@
   \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
 }
 \providecommand{\href}[2]{#2}
-\begin{thebibliography}{Web12}
+\begin{thebibliography}{OMB{\etalchar{+}}15}
 
-\bibitem[AST92]{AD92}
-Alan Adolphson, Steven Sperber, and Marvin Tretkoff (eds.), \emph{$p$-adic
-  methods in number theory and algebraic geometry}, Contemporary Mathematics,
-  no. 133, American Mathematical Society, Providence, RI, 1992.
+\bibitem[AAB{\etalchar{+}}15]{Amestoy2013}
+Patrick Amestoy, Cleve Ashcraft, Olivier Boiteau, Alfredo Buttari, Jean-Yves
+  L'Excellent, and Cl\'{e}ment Weisbecker, \emph{Improving multifrontal methods
+  by means of block low-rank representations}, SIAM Journal on Scientific
+  Computing \textbf{37} (2015), no.~3, A1451--A1474.
 
-\bibitem[Bea06]{Beardon}
-Alan~F. Beardon, \emph{From problem solving to research}, 2006, Unpublished
-  manuscript.
+\bibitem[ABB{\etalchar{+}}16]{Amestoy2016}
+Patrick Amestoy, Romain Brossier, Alfredo Buttari, Jean-Yves L'Excellent, Theo
+  Mary, Ludovic M\'{e}tivier, Alain Miniussi, and Stephane Operto, \emph{Fast
+  3d frequency-domain full-waveform inversion with a parallel block low-rank
+  multifrontal direct solver: Application to obc data from the north sea},
+  GEOPHYSICS \textbf{81} (2016), no.~6, R363--R383.
 
-\bibitem[Dav99]{mcdthesis}
-M.~C. Davey, \emph{Error-correction using low-density parity-check codes}, Phd,
-  University of Cambridge, 1999.
+\bibitem[Ber94]{Berenger1994}
+Jean-Pierre Berenger, \emph{A perfectly matched layer for the absorption of
+  electromagnetic waves}, Journal of Computational Physics \textbf{114} (1994),
+  no.~2, 185 -- 200.
 
-\bibitem[Lam86]{latex}
-Leslie Lamport, \emph{{\LaTeX \rm:} {A} document preparation system},
-  Addison-Wesley, 1986.
+\bibitem[BESJ10]{Brossier2010}
+R.~Brossier, V.~Etienne, Operto S., and Virieux J., \emph{Frequency-domain
+  numerical modelling of visco-acoustic waves based on finite-difference and
+  finite-element discontinuous galerkin methods}, ch.~7, 2010.
 
-\bibitem[Mac86]{MacKay86}
-D.~J.~C. MacKay, \emph{Statistical testing of high precision digitisers}, Tech.
-  Report 3971, Royal Signals and Radar Establishment, Malvern, Worcester. WR14
-  3PS, 1986.
+\bibitem[BHK{\etalchar{+}}10]{Barkved2010}
+Olav Barkved, Pete Heavey, Jan~H. Kommedal, Jean-Paul van Gestel, Ruth
+  Synnøve, Haga Pettersen, Chris Kent, and Uwe Albertin, \emph{Business impact
+  of full waveform inversion at valhall}, pp.~925--929, 2010.
 
-\bibitem[Mac95]{MacKay94:fe}
-D.~J.~C. MacKay, \emph{A free energy minimization framework for inference
-  problems in modulo 2 arithmetic}, Fast Software Encryption (Proceedings of
-  1994 K.U. Leuven Workshop on Cryptographic Algorithms) (B.~Preneel, ed.),
-  Lecture Notes in Computer Science Series, no. 1008, Springer, 1995,
-  pp.~179--195.
+\bibitem[BPC{\etalchar{+}}14]{Brossier2014}
+R.~Brossier, B.~Pajot, L.~Combe, S.~Operto, Metivier L., and J.~Virieux,
+  \emph{Time and frequency-domain fwi implementations based on time solver -
+  analysis of computational complexities}, 76th EAGE Conference and exhibition
+  (2014).
 
-\bibitem[MN95]{mnc4pfoutdated}
-D.~J.~C. MacKay and R.~M. Neal, \emph{Good codes based on very sparse
-  matrices}, Available from \url{www.inference.phy.cam.ac.uk}, 1995.
+\bibitem[BRO09]{BROSSIERPhD}
+Romain BROSSIER, \emph{Imagerie sismique \`{a} deux dimensions des milieux
+  visco-\'{e}lastiques par inversion des formes d'ondes: d\'{e}veloppements
+  m\'{e}thodologiques et applications}, Ph.D. thesis, Universit\'{e} de
+  Nice-Sophia Antipolis, 2009.
 
-\bibitem[Sha48]{Shannon48}
-C.~E. Shannon, \emph{A mathematical theory of communication}, Bell Sys. Tech.
-  J. \textbf{27} (1948), 379--423, 623--656.
+\bibitem[Hic02]{Hicks2002}
+Graham.~J. Hicks, \emph{Arbitrary source and receiver positioning in
+  finite-difference schemes using kaiser windowed sinc functions}, GEOPHYSICS
+  \textbf{67} (2002), no.~1, 156--165.
 
-\bibitem[Sha93]{shannon44}
-\bysame, \emph{The best detection of pulses}, Collected Papers of Claude
-  Shannon (N.~J.~A. Sloane and A.~D. Wyner, eds.), IEEE Press, New York, 1993,
-  pp.~148--150.
+\bibitem[HW10]{Hager2010}
+Georg Hager and Gerhard Wellein, \emph{Introduction to high performance
+  computing for scientists and engineers}, CRC Press, 2010.
 
-\bibitem[Web12]{Webots}
-Webots, \emph{Commercial mobile robot simulation software}, 2012,
-  \url{www.cyberbotics.com}.
+\bibitem[MB16]{Metivier2016}
+Ludovic M\'{e}tivier and Romain Brossier, \emph{The seiscope optimization
+  toolbox: A large-scale nonlinear optimization library based on reverse
+  communication}, GEOPHYSICS \textbf{81} (2016), no.~2, F1--F15.
+
+\bibitem[OBC{\etalchar{+}}14]{Operto2014}
+{S}. {O}perto, {R}. {B}rossier, {L}. {C}ombe, {L}. {M}etivier, {A}lessandra
+  {R}ibodetti, and {J}. {V}irieux, \emph{{C}omputationally efficient
+  three-dimensional acoustic finite-difference frequency-domain seismic
+  modeling in vertical transversely isotropic media with sparse direct solver},
+  {G}eophysics \textbf{79} (2014), {T}257--{T}275.
+
+\bibitem[OMB{\etalchar{+}}15]{Operto2015}
+S.~Operto, A.~Miniussi, R.~Brossier, L.~Combe, L.~M\'{e}tivier, V.~Monteiller,
+  A.~Ribodetti, and J.~Virieux, \emph{Efficient 3-d frequency-domain
+  mono-parameter full-waveform inversion of ocean-bottom cable data:
+  application to valhall in the visco-acoustic vertical transverse isotropic
+  approximation}, Geophysical Journal International \textbf{202} (2015), no.~2,
+  1362--1391.
+
+\bibitem[OVA{\etalchar{+}}07]{Operto2007}
+Stéphane Operto, Jean Virieux, Patrick Amestoy, Jean-Yves L'Excellent, Luc
+  Giraud, and Hafedh Ben~Hadj Ali, \emph{3d finite-difference frequency-domain
+  modeling of visco-acoustic wave propagation using a massively parallel direct
+  solver: A feasibility study}, GEOPHYSICS \textbf{72} (2007), no.~5,
+  SM195--SM211.
+
+\bibitem[PC11]{Plessix2011}
+R.-\'{E}. Plessix and Q.~Cao, \emph{A parametrization study for surface seismic
+  full waveform inversion in an acoustic vertical transversely isotropic
+  medium}, Geophysical Journal International \textbf{185} (2011), no.~1,
+  539--556.
+
+\bibitem[PSH98]{Pratt1998}
+R.~Gerhard Pratt, Changsoo Shin, and G.~J. Hick, \emph{Gauss-newton and full
+  newton methods in frequency-space seismic waveform inversion}, Geophysical
+  Journal International \textbf{133} (1998), no.~2, 341--362.
+
+\bibitem[Red12]{Reddy2012}
+P.R. Reddy, \emph{Historical development of seismic imaging technique an
+  overview}, Journal of the Indian Geophysical Union \textbf{16} (2012), no.~3,
+  71--86.
+
+\bibitem[RubXX]{Rubin}
+\emph{Beginner's guide to high-performance computing}, Oregon State University,
+  2XXX.
+
+\bibitem[SYM{\etalchar{+}}01]{Shin2001}
+Changsoo Shin, Kwangjin Yoon, Kurt~J. Marfurt, Keunpil Park, Dongwoo Yang,
+  Harry~Y. Lim, Seunghwan Chung, and Sungryul Shin, \emph{Efficient calculation
+  of a partial-derivative wavefield using reciprocity for seismic imaging and
+  inversion}, GEOPHYSICS \textbf{66} (2001), no.~6, 1856--1863.
+
+\bibitem[tag11]{Pacheco2011}
+\emph{In praise of an introduction to parallel programming}, An Introduction to
+  Parallel Programming (Peter~S. Pacheco, ed.), Morgan Kaufmann, Boston, 2011,
+  pp.~i --.
+
+\bibitem[VO09]{Virieux2009}
+J.~Virieux and S.~Operto, \emph{An overview of full-waveform inversion in
+  exploration geophysics}, GEOPHYSICS \textbf{74} (2009), no.~6, WCC1--WCC26.
 
 \end{thebibliography}

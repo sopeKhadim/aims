@@ -1,12 +1,11 @@
-\chapter{Optimization of DSFDM/FFWI code in shared node, MESCA II}
+\chapter{Performance study of DSFDM/FFWI code on MESCA II node} \label{dsfdm}
 \section{DSFDM/FFWI}
 \subsection{Description}
-The DSFDM/FFWI is a package which contains parallel computer codes to perform seismic modeling and fullwaveform inversion in the frequency domain. These codes have have been designed to execute modeling/inversion in 1, 2, 3 dimension media. According to the authors, only the 3D version is tested and Documented [doc DSfDm]. The DSFDM code is the seismic modeling code, while the FFWI code performs the inversion, using most of the subroutines implemented in DSFDM.Moreover,the DSFDM/FFWI codes assume visco-acoustic submarine supports in which vertical transverse isotropy can be taken into account.
+The DSFDM/FFWI is a package which contains parallel computer codes to perform seismic modeling and fullwaveform inversion in the frequency domain. These codes have have been designed to execute modeling/inversion in 1D, 2D, 3D. According to the authors \cite{Operto2007, Operto2014, Operto2015, Brossier2010, Amestoy2016}, only the 3D version is tested and Documented (see documentation). The DSFDM code is the seismic modelling code, while the FFWI code performs the inversion, using most of the subroutines implemented in DSFDM.Moreover,the DSFDM/FFWI codes assume visco-acoustic submarine supports in which vertical transverse isotropy can be taken into account.
 
-Seismic modeling is performed in the frequency domain with a finite-difference method on a uniform Cartesian grid ([Operto et al., 2007][Brossier et al., 2010]; [Operto et al., 2014]). The linear system resulting from
-the discretization of the time-harmonic wave equation is solved with a sparse direct solver. Sources and receivers, which can be processed in a reciprocal way, can be considered at arbitrary positions in coarse finite-difference grids with the sinc parameterization developed by Hicks (Hicks, 2002). Absorbing boundary conditions are perfectly-matched layers (PMLs) ([B\'{e}renger, 1994]; [Operto et al., 2007]). A free-surface boundary condition can be used along arbitrary tomography by forcing the pressure wave-field to 0 along this boundary. All of the tasks performed during seismic modeling (building impedance matrix, building right-hand side vectors, call of MUMPS subroutines, writing of solutions and extraction at receiver solutions) are implemented in the DSFDM code.
+Seismic modeling is performed in the frequency domain with a finite-difference method on a uniform Cartesian grid \cite{Operto2007, Operto2014, Brossier2010}. The linear system resulting from the discretization of the time-harmonic wave equation is solved with a sparse direct solver. Sources and receivers, which can be processed in a reciprocal way, can be considered at arbitrary positions in coarse finite-difference grids with the sinc parameterization developed by Hicks \cite{Hicks2002}. Absorbing boundary conditions are perfectly-matched layers (PMLs) \cite{Berenger1994, Operto2007}. A free-surface boundary condition can be used along arbitrary tomography by forcing the pressure wave-field to 0 along this boundary. All of the tasks performed during seismic modelling (building impedance matrix, building right-hand side vectors, call of MUMPS subroutines, writing of solutions and extraction at receiver solutions) are implemented in the DSFDM code.
 
-FFWI code is implemented with various local optimization methods. Recorded data are provided in the frequency-domain using an adaptation of the Seismic Unix (SU) format. The data are complex-valued (in single precision) and the frequency interval is uniform. The first frequency, the number of frequency and the frequency interval must be provided at specific locations in the SU headers. The numerical optimization is performed with the SEISCOPE optimization toolbox and allows for steepest-descent, conjugate gradient,l-BFGS and truncated Newton optimizations ([M\'{e}tivier and Brossier, 2016]). Seismic modeling and inversion are performed on the same Cartesian grid. Source wavelet estimation can be performed at each iteration of the FWI. Only the preconditioned steepest-descent optimization was tested, although conjugate gradient and l-BFGS optimizations are interfaced with the FFWI code. Interfacing Gauss-Newton and Newton truncated optimizations is the aim of ongoing work. The code has been tested for the update of the vertical wavespeed only. An application to real data is shown in [Operto et al., 2015]. Multi-parameter gradients are implemented but still need to be validated.
+FFWI code is implemented with various local optimization methods. Recorded data are provided in the frequency-domain using an adaptation of the Seismic Unix (SU) format. The data are complex-valued (in single precision) and the frequency interval is uniform. The first frequency, the number of frequency and the frequency interval must be provided at specific locations in the SU headers. The numerical optimization is performed with the SEISCOPE optimization toolbox and allows for steepest-descent, conjugate gradient,l-BFGS and truncated Newton optimizations \cite{Metivier2016}. Seismic modelling and inversion are performed on the same Cartesian grid. Source wavelet estimation can be performed at each iteration of the FWI. Only the preconditioned steepest-descent optimization was tested, although conjugate gradient and l-BFGS optimizations are interfaced with the FFWI code. Interfacing Gauss-Newton and Newton truncated optimizations is the aim of ongoing work. The code has been tested for the update of the vertical wavespeed only. An application to real data is shown in \cite{Operto2015}. Multi-parameter gradients are implemented but still need to be validated.
 
 \section{MUMPS Solver}
 MUMPS ("MUltifrontal Massively Parallel Solver") is a package for solving systems of linear equations of the form $ Ax = b$, where $ A $ is a square sparse matrix that can be either unsymmetric, symmetric positive definite, or general symmetric, on distributed memory computers. The MUMPS package is designed to solve linear equations by using a direct method based on a multifrontal approach which performs a Gaussian factorization
@@ -16,33 +15,45 @@ the factorization
 $$ A = LDL^{T}$$
 where D is block diagonal matrix with blocks of order 1 or 2 on the diagonal is performed. 
 
-MUMPS solvers the result of collaboration between different partners working in the MUMPS project since 1996. Todays, the MUMPS team include CERFACS, CNRS, ENS-Lyon, INRIA, INPT, University of Bordeaux. In the recent years, the popularity of MUMPS package has increased in different countries and different scientific projects. It has known different version during the years with real improvement of the LU factorization methods. The recent research of MUMPS project is focused on the Block-Low rank option that allows decreasing the complexity of sparse direct solvers on problems arising from partial differential equations is provided for experimentation purpose. 
+MUMPS solver results of collaboration between different partners working in the MUMPS project since 1996 (see \url{http://mumps.enseeiht.fr/}). Today, the MUMPS team includes \textbf{CERFACS}, \textbf{CNRS}, \textbf{ENS-Lyon}, \textbf{INRIA}, \textbf{INPT}, \textbf{University of Bordeaux}. In the recent years, the popularity of MUMPS package has increased in different countries and different scientific projects. It has known different version during the years with real improvement of the LU factorization methods. The recent research of MUMPS project is focused on the Block-Low rank option that allows decreasing the complexity of sparse direct solvers on problems arising from partial differential equations is provided for experimentation purpose \cite{Amestoy2013}. 
 
 A matrix A of size $ m \times n $ is said to be low rank if it can be approximated by a low-rank product $ \tilde{A} = XY^{T}$ of rank $ k_{\epsilon} $, such that $ k_{\epsilon}(m+n)\leq mn $ and $ \Vert \tilde{A} - A \Vert \leq  k_{\epsilon} $. The first condition states that the low-rank form of the matrix requires less storage than the standard form, whereas the second condition simply states that the approximation is of good enough accuracy. Using the low-rank form also allows for a reduction of the number of floating-point operations performed in many kernels (e.g., matrix-matrix multiplication).
 
-Thanks to the low-rank compression, the theoretical complexity of the factorization is reduced from $ O(n^{6})$ to $ O(n^{5.5})$ and can be further reduced to $ O(n^{5} \log 5 )$ with the best variant of the BLR format ([Amestoy et al., 2016b]).
+Thanks to the low-rank compression, the theoretical complexity of the factorization is reduced from $ O(n^{6})$ to $ O(n^{5.5})$ and can be further reduced to $ O(n^{5} \log 5 )$ with the best variant of the BLR format \cite{Amestoy2016}.
 
 \section{Tools}
 As we mentioned above, this DSFDM/FFWI version use MUMPS package to solve the linear system of discretized wave propagation equation. We need to install different packages for MUMPS dependencies as well as DSFDM/FFWI. MUMPS can be installed in sequential version. In the same way, it can be used with multithreaded machine (with OpenMP) or with parallel version (distributed memory MPI based). We need these packages for MUMPS installation:
 \begin{itemize}
 \item \textbf{BLAS library}: BLAS (\textit{Basic Linear Algebra Subprograms}) are routines that provide standard building blocks for performing basic vector and matrix operations. The Level 1 BLAS perform scalar, vector and vector-vector operations, the Level 2 BLAS perform matrix-vector operations, and the Level 3 BLAS perform matrix-matrix operations. BLAS is written in Fortan and it has an optimized sequential or multithreaded version.
-\item LAPACK library: LAPACK or Linear Algebra PACKage routines are written so that as much as possible of the computation is performed by calls to the Basic Linear Algebra Subprograms (BLAS). LAPACK is designed at the outset to exploit the Level 3 BLAS. Because of the coarse granularity of the Level 3 BLAS operations, their use promotes high efficiency on many high-performance computers, particularly if specially coded implementations are provided by the manufacturer.
-\item ScaLAPACK library: Similar to LAPACK, ScaLAPACK is a library of high-performance linear algebra routines for parallel distributed memory machines. It solves dense and banded linear systems, least squares problems, eigenvalue problems, and singular value problems. The use of ScaLAPACK provides efficiency, scalability, reliability, portability, flexibility, and ease of use (by making the interface to LAPACK and ScaLAPACK look as similar as possible). 
-\item BLACS library: In the context of distributed parallel machines, the BLACS (Basic Linear Algebra Communication Subprograms) routines is created to make easy linear algebra oriented message passing interface that may be implemented efficiently and uniformly across a large range of distributed memory platforms.
-\item OpenMP library: As we discuss in the section \ref{openMP}, this package allows parallel programming in  shared memory multi-core platforms. The openMP directives improves strongly the performance of MUMPS. OpenMP parallel regions of MUMPS can be set through the OMP\_NUM\_THREADS environment variable. 
-\item MPI library: 
-\item Others
+\item \textbf{LAPACK library}: LAPACK or Linear Algebra PACKage routines are written so that as much as possible of the computation is performed by calls to the Basic Linear Algebra Subprograms (BLAS). LAPACK is designed at the outset to exploit the Level 3 BLAS. Because of the coarse granularity of the Level 3 BLAS operations, their use promotes high efficiency on many high-performance computers, particularly if specially coded implementations are provided by the manufacturer.
+\item \textbf{ScaLAPACK library}: Similar to LAPACK, ScaLAPACK is a library of high-performance linear algebra routines for parallel distributed memory machines. It solves dense and banded linear systems, least squares problems, eigenvalue problems, and singular value problems. The use of ScaLAPACK provides efficiency, scalability, reliability, portability, flexibility, and ease of use (by making the interface to LAPACK and ScaLAPACK look as similar as possible). 
+\item \textbf{BLACS library}: In the context of distributed parallel machines, the BLACS (Basic Linear Algebra Communication Subprograms) routines is created to make easy linear algebra oriented message passing interface that may be implemented efficiently and uniformly across a large range of distributed memory platforms.
+\item \textbf{OpenMP library}: As we discuss in the section \ref{openMP}, this package allows parallel programming in  shared memory multi-core platforms. The openMP directives improves strongly the performance of MUMPS. OpenMP parallel regions of MUMPS can be set through the OMP\_NUM\_THREADS environment variable. 
+\item \textbf{MPI library}: Intel MPI is installed for parallel distributed version of MUMPS (see section \ref{MPI} for more details)
+\item \textbf{Others}: \textbf{CMake}, \textbf{SCOTCH}, \textbf{ParMETIS}.
 \end{itemize}
 
 \section{Installation of DSFDM/FFWI}
-\subsection{Description of nodes}
+This work was doing in a parallel distributed system, called \textit{cluster} . We are installed DSFDM/FFWI code in two cluster nodes serving reference for the study. Each cluster has different nodes working together in parallel. We need login and password to get securely (ssh protocol) the login. Slurm \footnote{\url{https://slurm.schedmd.com}}, a distributed task manager, allows users to submit, cancel and handle their jobs. The installation of DSFDM/FFWI was done after installing all packages cited below. Script shell and Linux commands are used to do the job. See DSFDM/FFWI documentation for more details about installation. The following packages are used for installation:
+\begin{itemize}
+\item \textbf{MUMPS} 5.1.1 is used for direct solver.
+\item \textbf{SEISCOPE Optimization TOOL BOX}\footnote{\url{https://seiscope2.osug.fr/SEISCOPE-OPTIMIZATION-TOOLBOX}} is a set of FORTRAN 90 optimization routines dedicated to the resolution of unconstrained and bound constrained nonlinear minimization problems. It contains six optimization methods : (Preconditioned) Steepest Descent, (Preconditioned) Nonlinear Conjugate Gradient, l-BFGS method, Preconditioned l-BFGS method, Truncated Newton method, Preconditioned Truncated Newton method.
+\item \textbf{CWP/SU}\footnote{\url{http://www.cwp.mines.edu/cwpcodes/index.html}} is a graphic tool for plotting seismic imaging results.
+\item \textbf{MPI} : Intel MPI is used. 
+\item  \textbf{Boost}\footnote{\url{http://www.boost.org/}} ( and \textbf{BoostMPI}) tries to become a standard C++ library and provide a set of structure and task using in different domains such as linear algebra, pseudorandom number generation, multithreading, image processing, regular expressions, and unit testing.
+\end{itemize} 
+
+The installation of DSFDM/FFWI in the cluster takes into account the optimisation flags: \newline
+ \verb|-O3 -xCORE-AVX2 -fma -mkl -g|   
+
 \section{Methodology}
-In this study, our aim is to evaluate the capacity of the DSFDM/FFWI code to process large test cases on MESCA-II node and to improve the performance of the code in this architecture. This implies how to keep the code scalable when the memory consumption and MPI communications are increasing. In [], the authors show that the memory consumption and elapsed time are mostly based on LU matrix factorisation doing by MUMPS package. Their results explain in more details this fact [].  The MUMPS team has developed the BLR option to improve the performance of the storing of LU matrix values (Amestoy et al. []). 
-As we discuss above (see \ref{optimization}), the optimization of DSFDM/FFWI can be seen in multiple levels. In this study, we will focus on scalability study (strongly and weakly) and different profiling methods to analyse the performance of the code.  
-\section{Scalability study}
+The aim of this study was, firstly, to evaluate the capacity of the DSFDM/FFWI code to process large test cases on MESCA-II node and to improve the performance of the code in this architecture and secondly, to implement another solver like \verb|QR_MUMPS| that will serve us to compare its performance with MUMPS. This implies how to keep the code scalable when the memory consumption and MPI communications are increasing. In \cite{Operto2007}, the authors show that the memory consumption and elapsed time are mostly based on LU matrix factorisation doing by MUMPS package. Their results explain in more details this fact.  The MUMPS team has developed the BLR option to improve the performance of the storing of LU matrix values \cite{Amestoy2013}. 
+
+As we discuss above (see \ref{optimization}), the optimization of DSFDM/FFWI can be seen in multiple levels. In this study, we will focus on scalability study (strongly and weakly) and different profiling methods have been used to analyse the performance of the code.  
+\section{Results and discussion}
 The scalability, as we discussed in section \ref{scalability}, is the coarse grained of the study of performance. It can be measured in two scales: strong scaling and weak scaling. Here, we study these two scales in different  nodes cluster such as Mesca and classical nodes. When we say classical nodes it refers the other nodes different to Mesca.  
-\subsection{Strong Scalability}
-This study allow us to understand how much faster our DSFDM/FFWI code is with N processors by fixing the size of the problem. Firstly, we perform different test cases in classical nodes to be comparing the performance with Mesca. To study the scalability, we use the homogeneous isotropic model that aims to validate DFSFDM against an analytical solution computed in an homogeneous infinite acoustic isotropic ($ianiso=0$) medium (Docffwi). According to the documentation, we fix, firstly, the size of the problem to be grid $(n1,n2,n3)=(41,41,121)$ ie. $ 4km \times 4km \times 12km$ (depth,X,Y). The others parameters are the same as the documentation. The wavespeed and the density are respectively equal to $ 1.5km/s $ and $ 1000km/m3 $. The grid interval is $ 100m$. The frequency is $3.72Hz$. The shot coordinates in meters are $ (x1, x2, x3) = (1000, 2000, 2000)$.
+
+This study of strong scalability allow us to understand how much faster our DSFDM/FFWI code is with N processors by fixing the size of the problem. The principle the weak scalability is to keep the work per fixed worker and add more workers/processors.Firstly, we perform different test cases in classical nodes to be comparing the performance with Mesca. To study the scalability, we use the homogeneous isotropic model that aims to validate DFSFDM against an analytical solution computed in an homogeneous infinite acoustic isotropic ($ianiso=0$) medium (see DSFDM/FFWI documentation). According to the documentation, we fix, firstly, the size of the problem to be grid $(n1,n2,n3)=(41,41,121)$ ie. $ 4km \times 4km \times 12km$ (depth,X,Y). The others parameters are the same as the documentation. The wavespeed and the density are respectively equal to $ 1.5km/s $ and $ 1000km/m3 $. The grid interval is $ 100m$. The frequency is $3.72Hz$. The shot coordinates in meters are $ (x1, x2, x3) = (1000, 2000, 2000)$.
 
 The results obtained in Figures \ref{cube_homogeneous_isotropic}-\ref{fig2_log_homogeneous_isotropic} show the comparison of \textbf{DSFDM} with the analytical solution (\textbf{FDTD}).
  
@@ -115,8 +126,6 @@ L3 cache &              61440K	\\
 \label{mescaNode}
 \end{table}
 
-These results are shown in the table \ref{Mesca1}
-
 \begin{table}[!h]
 \centering
 
@@ -128,65 +137,80 @@ $41 \times 41 \times 121$ & 8 & 1 & 1 & 2  & 10 & 6,7 &  17.73 & 25.048
 \caption{Homogeneous Isotropic running on Mesca II node}
 \label{Mesca1}
 \end{table}
+These results are shown in the table \ref{Mesca1}
 
 By using two MPI processes and ten threads, the classical node shows almost the same performance as Mesca(
  $T_{LU}(s)\thickapprox 17.7 s$). In addition, the total memory allocated for factorization was  6.7 Gigabyte.The time of LU factorization takes 74 \% and 70 \% respectively in the classical node and Mesca. This type of node will be used for rest of the simulation. The results are shown in tables \ref{Mesca1} and \ref{manny}. \newline
-\begin{figure}
-\centering 
-\includegraphics[width=0.7\textwidth]{images/fig_dsfdm/fig_cube_homogeneous_isotropic.pdf}
-\caption{Homogeneous Isotropic. Infinite homogeneous isotropic medium. Validation against analytical
-solution. a) DSFDM solution. b) Analytical solution. c) Difference.}
-\label{cube_homogeneous_isotropic} 
+%\begin{figure}
+%\centering 
+%\includegraphics[width=0.7\textwidth]{images/fig_dsfdm/fig_cube_homogeneous_isotropic.pdf}
+%\caption{Homogeneous Isotropic. Infinite homogeneous isotropic medium. Validation against analytical
+%solution. a) DSFDM solution. b) Analytical solution. c) Difference.}
+%\label{cube_homogeneous_isotropic} 
+%
+%\end{figure}
+%\begin{figure}[]
+%\centering 
+%\includegraphics[width=0.7\textwidth]{images/fig_dsfdm/fig_rec_snap_homogeneous_isotropic.pdf}
+%\caption{Homogeneous Isotropic.  Infinite homogeneous isotropic medium. Validation against analytical
+%solution. Solution at receiver positions, 1km below the surface.}
+%\label{rec_snap_homogeneous_isotropic} 
+%\end{figure}
+%\begin{figure}[]
+%\centering 
+%\includegraphics[width=0.7\textwidth]{images/fig_dsfdm/fig_rec_log_homogeneous_isotropic.pdf}
+%\caption{Homogeneous Isotropic. Infinite homogeneous isotropic medium. Validation against analytical
+%solution. Solution at receiver positions along the Y profile running across the shot position.}
+%\label{rec_log_homogeneous_isotropic} 
+%\end{figure}
+%\begin{figure}[]
+%\centering 
+%\includegraphics[width=0.7\textwidth]{images/fig_dsfdm/fig1_log_homogeneous_isotropic.pdf}
+%\caption{Homogeneous Isotropic. Infinite homogeneous isotropic medium. Validation against analytical
+%solution. Logs across shot position with correction for geometrical spreading}
+%\label{fig1_log_homogeneous_isotropic} 
+%\end{figure}
+%\begin{figure}[]
+%\centering 
+%\includegraphics[width=0.7\textwidth]{images/fig_dsfdm/fig2_log_homogeneous_isotropic.pdf}
+%\caption{Homogeneous Isotropic. Infinite homogeneous isotropic medium. Validation against analytical
+%solution. Logs along the slices of Fig. ??b with correction for geometrical spreading}
+%\label{fig2_log_homogeneous_isotropic} 
+%\end{figure} 
 
-\end{figure}
-\begin{figure}[]
-\centering 
-\includegraphics[width=0.7\textwidth]{images/fig_dsfdm/fig_rec_snap_homogeneous_isotropic.pdf}
-\caption{Homogeneous Isotropic.  Infinite homogeneous isotropic medium. Validation against analytical
-solution. Solution at receiver positions, 1km below the surface.}
-\label{rec_snap_homogeneous_isotropic} 
-\end{figure}
-\begin{figure}[]
-\centering 
-\includegraphics[width=0.7\textwidth]{images/fig_dsfdm/fig_rec_log_homogeneous_isotropic.pdf}
-\caption{Homogeneous Isotropic. Infinite homogeneous isotropic medium. Validation against analytical
-solution. Solution at receiver positions along the Y profile running across the shot position.}
-\label{rec_log_homogeneous_isotropic} 
-\end{figure}
-\begin{figure}[]
-\centering 
-\includegraphics[width=0.7\textwidth]{images/fig_dsfdm/fig1_log_homogeneous_isotropic.pdf}
-\caption{Homogeneous Isotropic. Infinite homogeneous isotropic medium. Validation against analytical
-solution. Logs across shot position with correction for geometrical spreading}
-\label{fig1_log_homogeneous_isotropic} 
-\end{figure}
-\begin{figure}[]
-\centering 
-\includegraphics[width=0.7\textwidth]{images/fig_dsfdm/fig2_log_homogeneous_isotropic.pdf}
-\caption{Homogeneous Isotropic. Infinite homogeneous isotropic medium. Validation against analytical
-solution. Logs along the slices of Fig. ??b with correction for geometrical spreading}
-\label{fig2_log_homogeneous_isotropic} 
-\end{figure} 
+In the following sentences, we define three test cases depending on the size of the grid to study the strong scalability of DSFDM code. This grid is a 3D dimension, $n1, n2, n3$, with PMLs. The chosen sizes of the grid are  $(n1,n2,n3)=(81,81,121)$,  $(n1,n2,n3)=(81,121,121)$ and $(n1,n2,n3)=(121,121,121)$. The grid interval is 100. We perform these tests in node cluster which contains the classical nodes and Mesca node described above. The resolution of wave propagation equation is handled by MUMPS solver. Here, we are more interested in factorization phase performing by MUMPS solver. This factorization can be doing in two ways: Full Rank and Low-Block Rank. In the following simulation, we will focus on the Full Rank option. In all the tests, we consider the number of MPI processes is always less or equal than the number of sockets (or CPU). 
 
-In the following sentences, we define three test cases depending on the size of the grid to study the strong scalability of DSFDM code. This grid is a 3D dimension, $n1, n1, n1$, with PMLs. The chosen sizes of the grid are  $(n1,n2,n3)=(81,81,121)$,  $(n1,n2,n3)=(81,121,121)$ and $(n1,n2,n3)=(121,121,121)$. The grid interval is 100. We perform these tests in node cluster which contains the classical nodes and Mesca node described above. The resolution of wave propagation equation is handled by MUMPS solver. Here, we are more interested in factorization phase performing by MUMPS solver. This factorization can be doing in two ways: Full Rank and Low-Block Rank. In the following simulation, we will focus on the Full Rank option. In all the tests, we consider the number of MPI processes is always less or equal than the number of sockets (or CPU). 
-
-The Figures \ref{TimeLU} and \ref{TimeMPIlog} show the elapsed time of the three different test cases running on classical nodes. As we can see in Figure \ref{TimeLU}, the Time of LU factorization depending on numbers of processes decreased by following a power law decay. We remark also, we obtain a good approximation when the numbers of processes is equals to a power of 2 (see Figure \ref{TimeLU2}). A log-log plot, (Figure \ref{TimeMPIlog1}), shows the strong scalability of the tests. In the case of $(n1,n2,n3)=(121,121,121)$, we observe a rapid drop of elapsed time between 2 and 8 processes and smooth descent of the curve in 8 and 16. The table \ref{fitting} shows the curve fitting of the the log scale plots (ie. $ Y= A*log(N)+B $, with N number of processes).
+\begin{figure}[!h]
+\centering 
+  \begin{subfigure}[b]{0.7\textwidth}
+    \includegraphics[width=\textwidth]{images/TimeLU.png}
+    \caption{Time Elapsed for LU factorization performing in classical nodes}
+    \label{TimeLU}
+  \end{subfigure}   
+  %
+  \begin{subfigure}[b]{0.7\textwidth}
+    \includegraphics[width=\textwidth]{images/TimeMPIlog.png}
+    \caption{Elapsed time for LU factorization in log scale performing in classical nodes}
+    \label{TimeMPIlog}
+  \end{subfigure}  
+\end{figure}
+The Figures \ref{TimeLU} and \ref{TimeMPIlog} show the elapsed time of three different test cases running on classical nodes. As we can see in Figure \ref{TimeLU}, the Time of LU factorization depending on numbers of processes decreased by following a power law decay. We remark also, we obtain a good approximation when the numbers of processes is equals to a power of 2 (see Figure \ref{TimeLU}). A log-log plot, (Figure \ref{TimeMPIlog}), shows the strong scalability of the tests. In the case of $(n1,n2,n3)=(121,121,121)$, we observe a rapid drop of elapsed time between 2 and 8 processes and smooth descent of the curve in 8 and 32. The table \ref{fitting} shows the curve fitting of the the log scale plots (ie. $ Y= A*log(N)+B $, with N is number of processes).
 
 \begin{table}[!h]
 \centering
 \begin{tabular}{l|l|l}
 Size & A & B  \\
  \hline
-$81 \times 81 \times 121$ & -0.65 & 2.17	 \\
- $81 \times 121 \times 121$ & -0.71 & 2.5 \\
-$ 121 \times 121 \times 121$ &  -0.75 & 2.86 
+$81 \times 81 \times 121$ & -0.55 & 2.4	 \\
+ $81 \times 121 \times 121$ & -0.54 & 2.6 \\
+$ 121 \times 121 \times 121$ &  -0.60 & 2.9 
 
 \end{tabular}
 \caption{Parameters of the fitting curves of Elapsed time in classical nodes}
 \label{fitting}
 \end{table}
 
-Similarly, we get the same remark in Mesca node (see Figure \ref{TimeMPIlog}). Here, we see a rapid growth between 2 and 4 processes different of the classical nodes. The elapsed time is fitted in log scale plot such that the slope and the intercept are given by the table \ref{fittingMesca}. For comparing the performance of Mesca and the classical nodes, we can use the execution time or the elapsed time in LU factorization. As the two architectures are different,   time may not be a good measure of comparison. We can can go further by considering the speedup that is define by Amdhal.
+Similarly, we get the same remark in Mesca node (see Figures \ref{TimeMescaLU} and \ref{TimeMescaMPIlog}). Here, we see a rapid growth between 2 and 4 processes different of the classical nodes. In case of $(n1,n2,n3)=(81,81,121)$, the get weak performance between 4 and 16, we can deduct we have got the limit of the scalability.The elapsed time is fitted in log scale plots such that the slope and the intercept are given by the table \ref{fittingMesca}. 
 
 \begin{table}[!h]
 \centering
@@ -202,31 +226,6 @@ $121 \times 121 \times 121$ &  -0.72 & 2.81
 \label{fittingMesca}
 \end{table}
 
-
-
-\begin{figure}
-\centering 
-  \begin{subfigure}[b]{0.7\textwidth}
-    \includegraphics[width=\textwidth]{images/TimeLU.png}
-    \caption{Time Elapsed for LU factorization performing in classical nodes}
-    \label{TimeLU}
-  \end{subfigure}
-   
-   \begin{subfigure}[b]{0.7\textwidth}
-    \includegraphics[width=\textwidth]{images/TimeLU2.png}
-    \caption{Elapsed time for LU factorization in log scale performing in on classical nodes}
-    \label{TimeLU2}
-  \end{subfigure}
-  
-  %
-  \begin{subfigure}[b]{0.7\textwidth}
-    \includegraphics[width=\textwidth]{images/TimeMPIlog1.png}
-    \caption{Elapsed time for LU factorization in log scale performing in on classical nodes}
-    \label{TimeMPIlog}
-  \end{subfigure}
-  
-\end{figure}
- 
 \begin{figure}
 \centering 
   \begin{subfigure}[b]{0.7\textwidth}
@@ -242,88 +241,40 @@ $121 \times 121 \times 121$ &  -0.72 & 2.81
   \end{subfigure}
 \end{figure} 
 
-\begin{figure}
+In \cite{Operto2007}, the authors defend that the most execution time is doing by MUMPS solver particularly in LU factorigation stage. Curiously, we have computed the ratio between elapsed time for LU factorisation and the Runtime. Surprisingly, the percentage of LU time decreased rapidly in function of the number of processes (Figures \ref{Percentage_of_TimeLU} and \ref{Percentage_of_TimeLU}). Firstly, we distinguish that the elapsed time of LU factorization take about 90 \% of the execution time when the number of process is less than 2.  This fact implies the running can be increased by different features such as the time used by communication processes, load imbalance, parallel startup overhead, the hotspots, resolution phase of $Ax = b$ in MUMPS and so one . We can get more details by using some profiling tools (see section \ref{profiling}). A comparison of these values in the two architectures shows that the Mesca node looses much time in non-LU process (see Figure \ref{Comparison_Mesca_and_CN1}). 
+
+\begin{figure}[!h]
 \centering 
   \begin{subfigure}[b]{0.7\textwidth}
-    \includegraphics[width=\textwidth]{images/memoryMPI.png}
-    \caption{Avg. Space in MBYTES per working proc for LU factorization on classical nodes }
-    \label{memoryMPI}
+    \includegraphics[width=\textwidth]{images/Percentage_of_TimeLUCN.png}
+     \caption{Percentage of Elapsed time for LU factorization over Runtime in classical nodes}
+    \label{Percentage_of_TimeLU}
   \end{subfigure}
   %
   \begin{subfigure}[b]{0.7\textwidth}
-    \includegraphics[width=\textwidth]{images/MemoryMPIlog.png}
-    \caption{Avg. Space in MBYTES per working proc for LU factorization in log scale on classical nodes}
+    \includegraphics[width=\textwidth]{images/Percentage_of_TimeLU_Mesca.png}
+    \caption{Percentage of Elapsed time for LU factorization over Runtime in Mesca}
+    \label{MemoryMPIlog}
+  \end{subfigure}
+  
+  %
+  \begin{subfigure}[b]{0.7\textwidth}
+    \includegraphics[width=\textwidth]{images/Comparison_Mesca_and_CN1.png}
+    \caption{Comparison of the percentage of Elapsed time for LU factorization over Runtime between these 2 architectures with a size $(n1,n2,n3)=(81,81,121)$}
     \label{MemoryMPIlog}
   \end{subfigure}
 \end{figure} 
 
-\begin{figure}
-\centering 
-  \begin{subfigure}[b]{0.7\textwidth}
-    \includegraphics[width=\textwidth]{images/memoryMescaMPI.png}
-    \caption{Avg. Space in MBYTES per working proc in LU factorization}
-    \label{sim2}
-  \end{subfigure}
-  %
-  \begin{subfigure}[b]{0.7\textwidth}
-    \includegraphics[width=\textwidth]{images/MemoryMescaMPIlog.png}
-    \caption{Avg. Space in MBYTES per working proc in LU factorization in log scale}
-    \label{sim3}
-  \end{subfigure}
-\end{figure} 
+To understand the scalability en term of number of threads in Mesca node, we fix a new test case $(n1,n2,n3)=( 202,202,202 )$.  The Math Kernel Library (Intel\textregistered MKL) threads are used in this test. The figure \ref{TimeThreads} shows a great performance obtained in Mesca II. We can conclude that the OpenMP threads and the math functions included in Intel MKL improve the scalability of DSFDM/FFWI code. We recall that the Intel MKL have been used in different library (BLAS, ScaLAPACK, BLACS) compiled with MUMPS solver. 
 
-.............................. \newline
-Comment ......................
-.............................. \newline
-\begin{figure}[]
+\begin{figure}[!h]
 \centering 
 \includegraphics[width=0.75\textwidth]{images/TimeThreads.png}
 \caption{Elapsed Time for LU factorization function of number of threads in Mesca node}
-\label{Mesca_Time} 
+\label{TimeThreads} 
 \end{figure}
 
-.............................. \newline
-Comment ...................... 
-.............................. \newline
-
-\begin{figure}[]
-\centering 
-\includegraphics[width=0.75\textwidth]{images/SpeedupMesca.png}
-\caption{Speedup in Mesca node}
-\label{Mesca_Time} 
-\end{figure}
-\begin{figure}[]
-\centering 
-\includegraphics[width=0.75\textwidth]{images/EffciencyMesca.png}
-\caption{Efficiency in Mesca node}
-\label{Mesca_Time} 
-\end{figure}
-
-
-
-.............................. \newline
-Comment ...................... \newline
-.............................. \newline
-
-
-
-\begin{figure}[]
-\centering 
-\includegraphics[width=0.75\textwidth]{images/Mesca_Time.png}
-\caption{Time in LU factorization in Mesca node}
-\label{Mesca_Time} 
-\end{figure}
-\begin{figure}[]
-\centering 
-\includegraphics[width=0.75\textwidth]{images/Mesca_Memory.png}
-\caption{Memory consumption in LU factorization in Mesca node}
-\label{Mesca_Memory} 
-\end{figure}
-.............................. \newline
-Comment ......................
-.............................. \newline
-
-Placement of Threads: KMP AFFINITY
+The Intel\textregistered OpenMP runtime library has the ability to bind OpenMP threads to physical processing units. The interface is controlled using the KMP\_AFFINITY environment variable, and with recent versions of Intel compilers, the KMP\_PLACE\_THREADS environment variable.  
 
 \begin{table}[!h]
 \centering
@@ -339,42 +290,123 @@ compact &	$92 \times 181 \times 321; dz=50$ &	8 & 8 &	24 & 192 &	435.1387 & 7340
 \caption{Homogeneous Isotropic running on Mesca node}
 \end{table}
 
+We are also investigating the scalability en term of memory consumption of DSFDM code in LU factorization stage. Theoretically, Amestoy and al. have shown the memory complexity of the LU factorization is $O(N^{4})$ \cite{Amestoy2016}. These results show that MUMPS is greedy in memory consumption when the size of the problem is increasing (see Figures \ref{memoryMPI} and \ref{memoryMescaMPI}). Basically, the memory allocation is divided between nodes. The size of processes of every classical node have two shared memories while Mesca node contain eight modules of shared memories. Here, we use a number of processes to be a multiple of power two. This implies the size of the memory is divided by power two. The figure \ref{MemoryMPIlog} shows the memory utilization in LU factorization in log scale of the three test case running on classical nodes. At the same time, we do the same study in Mesca node, we observe the memory consumption scales strongly when the number of process increased (see Figures \ref{TimeMescaMPIlog}).  
 
-.............................. \newline
-Comment ......................
-.............................. \newline
+\begin{figure}[!h]
+\centering 
+  \begin{subfigure}[b]{0.7\textwidth}
+    \includegraphics[width=\textwidth]{images/memoryMPI.png}
+    \caption{Avg. Space in MBYTES per working proc for LU factorization on classical nodes }
+    \label{memoryMPI}
+  \end{subfigure}
+  %
+  \begin{subfigure}[b]{0.7\textwidth}
+    \includegraphics[width=\textwidth]{images/MemoryMPIlog.png}
+    \caption{Avg. Space in MBYTES per working proc for LU factorization in log scale on classical nodes}
+    \label{MemoryMPIlog}
+  \end{subfigure}
+\end{figure} 
 
-Case study: Ovethrust. \newline
+\begin{figure}[!h]
+\centering 
+  \begin{subfigure}[b]{0.7\textwidth}
+    \includegraphics[width=\textwidth]{images/memoryMescaMPI.png}
+    \caption{Avg. Space in MBYTES per working proc in LU factorization on Mesca node}
+    \label{memoryMescaMPI}
+  \end{subfigure}
+  %
+  \begin{subfigure}[b]{0.7\textwidth}
+    \includegraphics[width=\textwidth]{images/MemoryMescaMPIlog.png}
+    \caption{Avg. Space in MBYTES per working proc in LU factorization in log scale on Mesca}
+    \label{MemoryMescaMPIlog}
+  \end{subfigure}
+\end{figure} 
+
+Moreover, the Speedup of Amdhal is also computed to study the strong scalability in Mesca node. The speedup is define to be:
+$$ \frac{T(1)}{T(p)} $$
+where $T(1)$ and $T(p)$ are elapsed time of one and p processes. The Figure \ref{SpeedupMesca} shows the speedup computed in the three test. We can see the curves which represent the three cases are superimposed between 1 and 8 processes. Consequently, we notice that the obtained results shows the measure of speedup is approximately independent to the choice of the grid size. Thus, the speedup is a good measure of scalability.       
+\begin{figure}[!h]
+\centering 
+\includegraphics[width=0.75\textwidth]{images/SpeedupMesca.png}
+\caption{Speedup in Mesca node}
+\label{SpeedupMesca} 
+\end{figure}
+
+For comparing the performance of Mesca and the classical nodes, we can use the execution time or the elapsed time in LU factorization. As the two architectures are different, we may not have a good comparison with these measures. We can can go further by considering the speedup defined by Amdhal. Here, we consider the grid size $ 81 \times 81 \times 121$. The computation of speedup in these two architecture (Mesca and classical nodes) gives the results shown in figures \ref{Comparison_Mesca_and_CN2}. Undoubtedly, we observe a great performance of Mesca node comparing to classical nodes.
+\begin{figure}[!h]
+\centering 
+\includegraphics[width=0.75\textwidth]{images/Comparison_Mesca_and_CN2.png}
+\caption{Comparison of speedup between Mesca and classical nodes}
+\label{Comparison_Mesca_and_CN2} 
+\end{figure}
+
+%\begin{figure}[!h]
+%\centering 
+%\includegraphics[width=0.75\textwidth]{images/EffciencyMesca.png}
+%\caption{Efficiency in Mesca node}
+%\label{EffciencyMesca} 
+%\end{figure}
+In order to study the scalability in term of size of memory required to store the LU factors on Mesca node, we have defined series of tests depending on size of the grid. We performed simulations by multiplying the dimension of models by 40 with PML
+absorbing boundary conditions along the 6 sides of the model. We keep the number of process equal to the number of CPUs (8 sockets) and OpenMP* threads are binding to the physical core (Each CPUs has 24 cores). The elapsed time of the CPU in the LU factorization and the total memory consumption are given by Figures \ref{MescaTime} and \ref{MescaMemory}. In this study, the largest size of the problem on Mesca is $(n1,n2,n3)=( 242,242,282 )$ ie. 16515048 points stored in 2,7 Terabytes. This size take 3948.772 s (ie. 1h:5mn 48). We can see, the wall time during LU factorization has increased parabolically. Similarly, the memory utilization increase in the same way.  
+  
+\begin{figure}[!h]
+\centering 
+\includegraphics[width=0.8\textwidth]{images/MescaTime.png}
+\caption{Time in LU factorization in Mesca node}
+\label{MescaTime} 
+\end{figure}
+\begin{figure}[!h]
+\centering 
+\includegraphics[width=0.8\textwidth]{images/MescaMemory.png}
+\caption{Memory consumption in LU factorization in Mesca node}
+\label{MescaMemory} 
+\end{figure}
+
+The weak scalability was studied in Mesca in comparison with classical nodes. We increased the size of the problem as function of the resources. That is to say, if one node is used to run a test size $41x41x121$ then we take 2 nodes for $41x82x121$. In Mesca, we did this study in term of module (socket + shared memory). The results shown in figures \ref{weakScaleNodes} \ref{weakScaleMesca} mean we don't perfect scalability in both.
+
+\begin{figure}[!h]
+\centering 
+\includegraphics[width=0.8\textwidth]{images/weakScaleNodes.png}
+\caption{Weak scalability in classical nodes}
+\label{weakScaleNodes} 
+\end{figure}
+\begin{figure}[!h]
+\centering 
+\includegraphics[width=0.8\textwidth]{images/weakScaleMesca.png}
+\caption{Weak scalability in Mesca nodes}
+\label{weakScaleMesca} 
+\end{figure}
+Finally, we test the performance of Mesca node by reproducing the case study of Valhall model. In \cite{Amestoy2016}, the authors perform the Valhall model on computer nodes that are equipped with two 2.5 GHz Intel Xeon IvyBridge E5-2670v2 processors with 10 cores per processor. The shared memory per node is 64 GB. For $ 66 \times 130 \times 230$, $ 92 \times 181 \times 321$, and $ 131 \times 258 \times 458$ grid sizes, they perform FFW on 240, 320 and 680 cores. The results have shown in Table \ref{amestoy}, Full Rank option of MUMPS. Lacking of Valhall dataset, we reproduce this parameters of this study on Homogeneous isotropic model. We recall that the KMP\_AFFINITY is scatter. In Mesca node, for $ 66 \times 130 \times 230$, we use the half of the number of core to get 98 seconds instead of 2 times the elapsed time of the first study. We can calculate the ratio of the time for LU factorization in Mesca over the time in Intel Xeon IvyBridge nodes. We have a ratio equal 1.78 . By using the 198 cores of Mesca we get the ratio 1.89. This fact implies the performance of Mesca node related to the nodes used in the work of \cite{Amestoy2016}.   
 
 \begin{table}[!h]
 \centering
-
-\label{amestoy}
 \begin{tabular}{llllllllll}
 Freq & Grid dimensions & npml &  & \#MPI & \#th & \#Cores & $T_{LU}(s)$  \\
  \hline
 3.5, 4, 4.5, 5 & $ 66 \times 130 \times 230; dz=70$ & 8 & 24 & 10 & 240 & 78 \\
 7 &	$ 92 \times 181 \times 321; dz=50 $ &	8 & 32 & 10	& 320 & 322 \\
 10 & $ 131 \times 258 \times 458; dz=35$ &	4 &	68 & 10	& 680 &	1153
-
 \end{tabular}
-\caption{}
+\caption{North Sea case study. Problem size and computational resources in (Amestoy et al. 2016)}
+\label{amestoy}
 \end{table}
 
 \begin{table}[!h]
 \centering
 
-\label{amestoyMesca}
 \begin{tabular}{lllllllllll}
 Freq & Grid dimensions & npml & \#MPI & \#th & \#Cores & $T_{LU}(s)$ & $ T(s)$ \\
  \hline
-3	& $ 66 \times 130 \times 230; dz=70$ &	8 & 5 & 24	& 120 &	194.0989 & 3m42.937s  \\
-3,5	& $ 66 \times 130 \times 230; dz=70$ &	8 &	8 &	15 &	120 &	98.9756 & 2m4.808s  \\
+3,5	& $ 66 \times 130 \times 230; dz=70$ &	8 &	8 &	15 &	120 &	98,9756 & 2m4.808s  \\
 7	& $ 92 \times 181 \times 321; dz=50 $ & 8 & 8 & 20 &	160	& 439.0829 & 8m21.590s  \\
 7	& $ 92\times 181 \times 321; dz=50 $ &	8 &	8 &	24 &	192	& 396.3693 & 7m39.295s	 \\							
 10	& $ 131 \times 258 \times 458; dz=35$ &	4	& 8 &	24 & 192	 & 2182.6717 &	38m58.811s
 \end{tabular}
-\caption{}
+\caption{Problem size and computational resources in Mesca node}
+\label{amestoyMesca}
 \end{table}
-\section{Profiling}
-\section{Results}
+
+In order to optimize some DSFDM/FFWI routines, code profiler such asIntel$^{\mbox{\scriptsize{\textregistered}}}$, \textit{Allinea}, \textit{BPM} (old name \textit{MPIPROF}), \textit{Bull IO Instrumentation}, are used to study the code. In this report, as example, we give just give the results obtained where studying MPI communication between Mesca and classical nodes with BPM (see Appendix).
+%The study of ...
+%\section{Profiling} \label{prof}
+%\section{Results}

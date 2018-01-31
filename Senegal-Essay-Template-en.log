@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.8.14)  16 NOV 2017 17:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.8.14)  31 JAN 2018 12:54
 entering extended mode
 **./Senegal-Essay-Template-en.tex
 (Senegal-Essay-Template-en.tex
@@ -334,10 +334,51 @@ Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \tab@size=\count119
 \listing@line=\count120
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\tabularx.sty"
+Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
+\TX@col@width=\dimen141
+\TX@old@table=\dimen142
+\TX@old@col=\dimen143
+\TX@target=\dimen144
+\TX@delta=\dimen145
+\TX@cols=\count121
+\TX@ftn=\toks30
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\makecell\makecell.sty"
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen146
+\c@nlinenum=\count122
+\TeXr@lab=\toks31
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
+\lst@mode=\count123
+\lst@gtempboxa=\box28
+\lst@token=\toks32
+\lst@length=\count124
+\lst@currlwidth=\dimen147
+\lst@column=\count125
+\lst@pos=\count126
+\lst@lostspace=\dimen148
+\lst@width=\dimen149
+\lst@newlines=\count127
+\lst@lineno=\count128
+\lst@maxwidth=\dimen150
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count129
+\lst@skipnumbers=\count130
+\lst@framebox=\box29
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks30
-\inpenc@posthook=\toks31
+\inpenc@prehook=\toks33
+\inpenc@posthook=\toks34
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\latin1.def"
 File: latin1.def 2015/03/17 v1.2c Input encoding file
@@ -351,23 +392,24 @@ Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen141
-\captionmargin@=\dimen142
-\captionwidth=\dimen143
-\caption@tempdima=\dimen144
-\caption@indent=\dimen145
-\caption@parindent=\dimen146
-\caption@hangindent=\dimen147
+\captionmargin=\dimen151
+\captionmargin@=\dimen152
+\captionwidth=\dimen153
+\caption@tempdima=\dimen154
+\caption@indent=\dimen155
+\caption@parindent=\dimen156
+\caption@hangindent=\dimen157
 )
-\c@ContinuedFloat=\count121
+\c@ContinuedFloat=\count131
 Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
 )
-\c@subfigure=\count122
-\c@subtable=\count123
+\c@subfigure=\count132
+\c@subtable=\count133
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lipsum\lipsum.sty"
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count124
+\c@lips@count=\count134
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\mwe\mwe.sty"
 Package: mwe 2012/05/15 v0.3 Package to support minimal working examples (MWE)
@@ -378,26 +420,36 @@ Package: blindtext 2012/01/06 V2.0 blindtext-Package
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\xspace.sty"
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count125
-\c@Blindtext=\count126
-\c@blind@countparstart=\count127
-\blind@countxx=\count128
-\blindtext@numBlindtext=\count129
-\blind@countyy=\count130
-\c@blindlist=\count131
-\c@blindlistlevel=\count132
-\c@blindlist@level=\count133
-\blind@listitem=\count134
-\c@blind@listcount=\count135
-\c@blind@levelcount=\count136
-\blind@mathformula=\count137
-\blind@Mathformula=\count138
-\c@blind@randomcount=\count139
-\c@blind@randommax=\count140
-\c@blind@pangramcount=\count141
-\c@blind@pangrammax=\count142
+\c@blindtext=\count135
+\c@Blindtext=\count136
+\c@blind@countparstart=\count137
+\blind@countxx=\count138
+\blindtext@numBlindtext=\count139
+\blind@countyy=\count140
+\c@blindlist=\count141
+\c@blindlistlevel=\count142
+\c@blindlist@level=\count143
+\blind@listitem=\count144
+\c@blind@listcount=\count145
+\c@blind@levelcount=\count146
+\blind@mathformula=\count147
+\blind@Mathformula=\count148
+\c@blind@randomcount=\count149
+\c@blind@randommax=\count150
+\c@blind@pangramcount=\count151
+\c@blind@pangrammax=\count152
 ))
+("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip52
+\multirow@cntb=\count153
+\multirow@dima=\skip53
+\bigstrutjot=\dimen158
+)
 (Senegal-Essay-Template-en.aux
+
+LaTeX Warning: Label `simb' multiply defined.
+
 
 LaTeX Warning: Label `sim1' multiply defined.
 
@@ -405,46 +457,79 @@ LaTeX Warning: Label `sim1' multiply defined.
 LaTeX Warning: Label `dmemory' multiply defined.
 
 
-LaTeX Warning: Label `sim2' multiply defined.
+LaTeX Warning: Label `eq1' multiply defined.
 
 
-LaTeX Warning: Label `sub@sim2' multiply defined.
-
-
-LaTeX Warning: Label `sim3' multiply defined.
-
-
-LaTeX Warning: Label `sub@sim3' multiply defined.
+LaTeX Warning: Label `VTune' multiply defined.
 
 
 LaTeX Warning: Label `Mesca1' multiply defined.
 
 
-LaTeX Warning: Label `Mesca_Time' multiply defined.
+LaTeX Warning: Label `MemoryMPIlog' multiply defined.
 
 
-LaTeX Warning: Label `Mesca_Time' multiply defined.
+LaTeX Warning: Label `sub@MemoryMPIlog' multiply defined.
 
 
-LaTeX Warning: Label `Mesca_Time' multiply defined.
+LaTeX Warning: Label `MemoryMPIlog' multiply defined.
+
+
+LaTeX Warning: Label `sub@MemoryMPIlog' multiply defined.
+
+
+LaTeX Warning: Label `MPIProfInca' multiply defined.
+
+
+LaTeX Warning: Label `sub@MPIProfInca' multiply defined.
+
+
+LaTeX Warning: Label `MPIProfMesc' multiply defined.
+
+
+LaTeX Warning: Label `sub@MPIProfMesc' multiply defined.
+
+
+LaTeX Warning: Label `MPIProfInca' multiply defined.
+
+
+LaTeX Warning: Label `sub@MPIProfInca' multiply defined.
+
+
+LaTeX Warning: Label `MPIProfMesc' multiply defined.
+
+
+LaTeX Warning: Label `sub@MPIProfMesc' multiply defined.
+
+
+LaTeX Warning: Label `MPIProfInca' multiply defined.
+
+
+LaTeX Warning: Label `sub@MPIProfInca' multiply defined.
+
+
+LaTeX Warning: Label `MPIProfMesc' multiply defined.
+
+
+LaTeX Warning: Label `sub@MPIProfMesc' multiply defined.
 
 )
 \openout1 = `Senegal-Essay-Template-en.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 169.
-LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 202.
+LaTeX Font Info:    ... okay on input line 202.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 202.
+LaTeX Font Info:    ... okay on input line 202.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 202.
+LaTeX Font Info:    ... okay on input line 202.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 202.
+LaTeX Font Info:    ... okay on input line 202.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 202.
+LaTeX Font Info:    ... okay on input line 202.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 202.
+LaTeX Font Info:    ... okay on input line 202.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 202.
+LaTeX Font Info:    ... okay on input line 202.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -482,17 +567,17 @@ LaTeX Font Info:    ... okay on input line 169.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count143
-\scratchdimen=\dimen148
-\scratchbox=\box28
-\nofMPsegments=\count144
-\nofMParguments=\count145
-\everyMPshowfont=\toks32
-\MPscratchCnt=\count146
-\MPscratchDim=\dimen149
-\MPnumerator=\count147
-\makeMPintoPDFobject=\count148
-\everyMPtoPDFconversion=\toks33
+\scratchcounter=\count154
+\scratchdimen=\dimen159
+\scratchbox=\box30
+\nofMPsegments=\count155
+\nofMParguments=\count156
+\everyMPshowfont=\toks35
+\MPscratchCnt=\count157
+\MPscratchDim=\dimen160
+\MPnumerator=\count158
+\makeMPintoPDFobject=\count159
+\everyMPtoPDFconversion=\toks36
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -506,8 +591,8 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\AtBeginShipoutBox=\box29
-Package hyperref Info: Link coloring ON on input line 169.
+\AtBeginShipoutBox=\box31
+Package hyperref Info: Link coloring ON on input line 202.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -515,43 +600,44 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count149
+\c@section@level=\count160
 )
-LaTeX Info: Redefining \ref on input line 169.
-LaTeX Info: Redefining \pageref on input line 169.
-LaTeX Info: Redefining \nameref on input line 169.
+LaTeX Info: Redefining \ref on input line 202.
+LaTeX Info: Redefining \pageref on input line 202.
+LaTeX Info: Redefining \nameref on input line 202.
 
 (Senegal-Essay-Template-en.out) (Senegal-Essay-Template-en.out)
 \@outlinefile=\write3
 \openout3 = `Senegal-Essay-Template-en.out'.
 
+\c@lstlisting=\count161
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 186.
+LaTeX Font Info:    Try loading font information for U+msa on input line 219.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 186.
+LaTeX Font Info:    Try loading font information for U+msb on input line 219.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 186.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 219.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <8> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 186.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 219.
 
 
-<images/aimssn-logo.jpg, id=95, 566.5968pt x 104.3097pt>
+<images/aimssn-logo.jpg, id=87, 566.5968pt x 104.3097pt>
 File: images/aimssn-logo.jpg Graphic file (type jpg)
 
 <use images/aimssn-logo.jpg>
-Package pdftex.def Info: images/aimssn-logo.jpg used on input line 186.
+Package pdftex.def Info: images/aimssn-logo.jpg used on input line 219.
 (pdftex.def)             Requested size: 341.43306pt x 62.85687pt.
  [1
 
@@ -565,410 +651,509 @@ Package pdftex.def Info: images/aimssn-logo.jpg used on input line 186.
 
  [2
 
-] (chapter1.tex) (chapter2.texpdfTeX warning (ext4): destination with the same 
-identifier (name{page.1}) has been already used, duplicate ignored
+] (chapter1.tex
+ 1.
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10.95> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 4.
+
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 10.
+
+LaTeX Font Info:    No file OMScmss.fd. on input line 10.
+
+LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead on input line 10.
+
+) (chapter2.texpdfTeX warning (ext4): destination with the same identifier (nam
+e{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1 \chapter
-            {Preliminary} [1
+            {Geophysical Seismic Imaging} [1
 
 ]
- 1.
+ 2.
 [2
 
-]
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 22.
-
-LaTeX Font Info:    No file OMScmss.fd. on input line 22.
-
-
-LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 22.
-
-<images/geophones.jpg, id=149, 1284.8pt x 803.0pt>
+] <images/geophones.jpg, id=159, 1284.8pt x 803.0pt>
 File: images/geophones.jpg Graphic file (type jpg)
- <use images/geophones.jpg>
-Package pdftex.def Info: images/geophones.jpg used on input line 42.
+
+<use images/geophones.jpg>
+Package pdftex.def Info: images/geophones.jpg used on input line 31.
 (pdftex.def)             Requested size: 281.85585pt x 176.15817pt.
+
+<images/hydrophones.jpg, id=162, 401.3394pt x 328.8285pt>
+File: images/hydrophones.jpg Graphic file (type jpg)
+
+<use images/hydrophones.jpg>
+Package pdftex.def Info: images/hydrophones.jpg used on input line 48.
+(pdftex.def)             Requested size: 281.85585pt x 230.94606pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 49.
-
-<images/hydrophones.jpg, id=151, 401.3394pt x 328.8285pt>
-File: images/hydrophones.jpg Graphic file (type jpg)
-
-<use images/hydrophones.jpg>
-Package pdftex.def Info: images/hydrophones.jpg used on input line 59.
-(pdftex.def)             Requested size: 281.85585pt x 230.94606pt.
- [3] [4 <./images/geophones.jpg> <./images/hydrophones.jpg>] [5] [6] <images/FF
-WI.png, id=214, 555.57562pt x 153.57375pt>
+[3 <./images/geophones.jpg>] [4 <./images/hydrophones.jpg>] [5]
+<images/FFWI.png, id=230, 555.57562pt x 153.57375pt>
 File: images/FFWI.png Graphic file (type png)
-
-<use images/FFWI.png>
-Package pdftex.def Info: images/FFWI.png used on input line 159.
+ <use images/FFWI.png>
+Package pdftex.def Info: images/FFWI.png used on input line 148.
 (pdftex.def)             Requested size: 375.80542pt x 103.88275pt.
- <images/valhall.jpg, id=216, 843.15pt x 473.77pt>
+
+[6 <./images/FFWI.png>] <images/valhall.jpg, id=247, 843.15pt x 473.77pt>
 File: images/valhall.jpg Graphic file (type jpg)
 
 <use images/valhall.jpg>
-Package pdftex.def Info: images/valhall.jpg used on input line 196.
+Package pdftex.def Info: images/valhall.jpg used on input line 186.
 (pdftex.def)             Requested size: 281.85585pt x 158.37596pt.
- <images/sim1.png, id=219, 380.92313pt x 477.28313pt>
+ <images/sim1.png, id=251, 380.92313pt x 477.28313pt>
 File: images/sim1.png Graphic file (type png)
 
 <use images/sim1.png>
-Package pdftex.def Info: images/sim1.png used on input line 213.
+Package pdftex.def Info: images/sim1.png used on input line 202.
 (pdftex.def)             Requested size: 281.85585pt x 353.1694pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[7 <./images/FFWI.png>]
+[7 <./images/valhall.jpg>] <images/sim2.png, id=276, 259.7203pt x 341.02406pt>
+File: images/sim2.png Graphic file (type png)
+
+<use images/sim2.png>
+Package pdftex.def Info: images/sim2.png used on input line 232.
+(pdftex.def)             Requested size: 187.89912pt x 246.71835pt.
+ <images/3Dsim3.png, id=279, 264.99pt x 353.06906pt>
+File: images/3Dsim3.png Graphic file (type png)
+
+<use images/3Dsim3.png>
+Package pdftex.def Info: images/3Dsim3.png used on input line 238.
+(pdftex.def)             Requested size: 187.89912pt x 250.35753pt.
+) (chapter3.tex [8 <./images/sim1.png>] [9 <./images/sim2.png> <./images/3Dsim3
+.png>]
+ 3.
+<images/qlm.png, id=300, 225.84375pt x 225.84375pt>
+File: images/qlm.png Graphic file (type png)
+ <use images/qlm.png>
+Package pdftex.def Info: images/qlm.png used on input line 26.
+(pdftex.def)             Requested size: 281.85585pt x 281.89389pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/sim2.png, id=233, 259.7203pt x 341.02406pt>
-File: images/sim2.png Graphic file (type png)
- <use images/sim2.png>
-Package pdftex.def Info: images/sim2.png used on input line 243.
-(pdftex.def)             Requested size: 187.89912pt x 246.71835pt.
+[10
 
-<images/3Dsim3.png, id=234, 264.99pt x 353.06906pt>
-File: images/3Dsim3.png Graphic file (type png)
- <use images/3Dsim3.png>
-Package pdftex.def Info: images/3Dsim3.png used on input line 249.
-(pdftex.def)             Requested size: 187.89912pt x 250.35753pt.
-
-[8 <./images/valhall.jpg>] <images/qlm.png, id=246, 225.84375pt x 225.84375pt>
-File: images/qlm.png Graphic file (type png)
-
-<use images/qlm.png>
-Package pdftex.def Info: images/qlm.png used on input line 279.
-(pdftex.def)             Requested size: 187.89912pt x 187.90858pt.
- [9 <./images/sim1.png>] [10 <./images/sim2.png> <./images/3Dsim3.png> <./image
-s/qlm.png>]
-<images/simd.png, id=268, 331.99031pt x 170.88844pt>
+] <images/simd.png, id=314, 331.99031pt x 170.88844pt>
 File: images/simd.png Graphic file (type png)
- <use images/simd.png>
-Package pdftex.def Info: images/simd.png used on input line 296.
+
+<use images/simd.png>
+Package pdftex.def Info: images/simd.png used on input line 43.
 (pdftex.def)             Requested size: 187.89912pt x 96.71902pt.
 
-<images/vectorization.png, id=269, 303.38344pt x 112.16907pt>
+<images/vectorization.png, id=315, 303.38344pt x 112.16907pt>
 File: images/vectorization.png Graphic file (type png)
 
 <use images/vectorization.png>
-Package pdftex.def Info: images/vectorization.png used on input line 302.
+Package pdftex.def Info: images/vectorization.png used on input line 49.
 (pdftex.def)             Requested size: 187.89912pt x 69.4722pt.
 
-<images/mimd.png, id=270, 328.22626pt x 185.94469pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/mimd.png, id=316, 328.22626pt x 185.94469pt>
 File: images/mimd.png Graphic file (type png)
  <use images/mimd.png>
-Package pdftex.def Info: images/mimd.png used on input line 311.
+Package pdftex.def Info: images/mimd.png used on input line 59.
 (pdftex.def)             Requested size: 281.85585pt x 159.67664pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[11 <./images/simd.png> <./images/vectorization.png>]
-<images/uma.png, id=281, 308.65312pt x 243.15843pt>
+[11 <./images/qlm.png>] <images/uma.png, id=330, 308.65312pt x 220.57407pt>
 File: images/uma.png Graphic file (type png)
- <use images/uma.png>
-Package pdftex.def Info: images/uma.png used on input line 329.
-(pdftex.def)             Requested size: 187.89912pt x 148.03331pt.
 
-<images/numa.png, id=282, 342.5297pt x 171.64125pt>
+<use images/uma.png>
+Package pdftex.def Info: images/uma.png used on input line 77.
+(pdftex.def)             Requested size: 187.89912pt x 134.28409pt.
+ <images/numa.png, id=331, 342.5297pt x 152.82094pt>
 File: images/numa.png Graphic file (type png)
- <use images/numa.png>
-Package pdftex.def Info: images/numa.png used on input line 335.
-(pdftex.def)             Requested size: 187.89912pt x 94.1594pt.
 
-<images/d-memory.png, id=284, 358.33875pt x 146.79843pt>
+<use images/numa.png>
+Package pdftex.def Info: images/numa.png used on input line 83.
+(pdftex.def)             Requested size: 187.89912pt x 83.8349pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/d-memory.png, id=334, 358.33875pt x 146.79843pt>
 File: images/d-memory.png Graphic file (type png)
 
 <use images/d-memory.png>
-Package pdftex.def Info: images/d-memory.png used on input line 344.
+Package pdftex.def Info: images/d-memory.png used on input line 92.
 (pdftex.def)             Requested size: 187.89912pt x 76.97624pt.
- [12 <./images/mimd.png> <./images/uma.png> <./images/numa.png>]
-
-Package caption Warning: \label without proper reference on input line 359.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `hybrid' on page 13 undefined on input line 349.
-
-<images/hybrid1.png, id=295, 354.57469pt x 145.29282pt>
+ [12 <./images/simd.png> <./images/vectorization.png> <./images/mimd.png>] <ima
+ges/hybrid1.png, id=346, 354.57469pt x 145.29282pt>
 File: images/hybrid1.png Graphic file (type png)
 
 <use images/hybrid1.png>
-Package pdftex.def Info: images/hybrid1.png used on input line 353.
+Package pdftex.def Info: images/hybrid1.png used on input line 101.
 (pdftex.def)             Requested size: 187.89912pt x 76.99594pt.
- <images/hybrid2.png, id=296, 361.35pt x 145.29282pt>
+ <images/hybrid2.png, id=347, 361.35pt x 145.29282pt>
 File: images/hybrid2.png Graphic file (type png)
 
 <use images/hybrid2.png>
-Package pdftex.def Info: images/hybrid2.png used on input line 357.
+Package pdftex.def Info: images/hybrid2.png used on input line 105.
 (pdftex.def)             Requested size: 187.89912pt x 75.55048pt.
 File: images/d-memory.png Graphic file (type png)
  <use images/d-memory.png>
-Package pdftex.def Info: images/d-memory.png used on input line 367.
+Package pdftex.def Info: images/d-memory.png used on input line 115.
 (pdftex.def)             Requested size: 187.89912pt x 76.97624pt.
-) (chapter3.tex [13 <./images/d-memory.png> <./images/hybrid1.png> <./images/hy
-brid2.png>] [14]
- 2.
-) (chapter4.tex [15
 
-]
- 3.
-[16
 
-] [17] [18]
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[13 <./images/uma.png> <./images/numa.png> <./images/d-memory.png> <./images/hy
+brid1.png> <./images/hybrid2.png>]
+<images/bottlenecks.png, id=365, 451.6875pt x 164.11313pt>
+File: images/bottlenecks.png Graphic file (type png)
+
+<use images/bottlenecks.png>
+Package pdftex.def Info: images/bottlenecks.png used on input line 131.
+(pdftex.def)             Requested size: 187.89912pt x 68.27094pt.
+
+<images/loadbalancing.png, id=366, 331.2375pt x 158.84344pt>
+File: images/loadbalancing.png Graphic file (type png)
+
+<use images/loadbalancing.png>
+Package pdftex.def Info: images/loadbalancing.png used on input line 137.
+(pdftex.def)             Requested size: 187.89912pt x 90.10542pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/communication.png, id=367, 373.395pt x 169.38281pt>
+File: images/communication.png Graphic file (type png)
+
+<use images/communication.png>
+Package pdftex.def Info: images/communication.png used on input line 143.
+(pdftex.def)             Requested size: 187.89912pt x 85.23653pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[14 <./images/bottlenecks.png>] [15 <./images/loadbalancing.png> <./images/comm
+unication.png>] [16] <images/OpenMP.png, id=407, 311.66437pt x 455.45157pt>
+File: images/OpenMP.png Graphic file (type png)
+
+<use images/OpenMP.png>
+Package pdftex.def Info: images/OpenMP.png used on input line 237.
+(pdftex.def)             Requested size: 142.26404pt x 227.62793pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 249.
+ [17] [18 <./images/OpenMP.png>]
+
+LaTeX Warning: \verb may be unreliable inside tabularx on input line 332.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[19]
+
+LaTeX Warning: Text page 20 contains only floats.
+
+[20]
+
+LaTeX Warning: Citation `https://software.intel.com/en-us/intel-cplusplus-compi
+ler-17.0-user-and-reference-guide' on page 21 undefined on input line 372.
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 424--424
+[]\OT1/cmss/m/n/10.95 The -O3 op-tion is par-tic-u-larly rec-om-mended
  []
 
 
-Package caption Warning: \label without proper reference on input line 331.
-See the caption package documentation for explanation.
+Underfull \hbox (badness 1087) in paragraph at lines 424--424
+[]|\OT1/cmss/m/n/10.95 Causes multi-threaded code to be gen-er-ated
+ []
 
 
-LaTeX Warning: Reference `Mesca1' on page 19 undefined on input line 118.
+Underfull \hbox (badness 1721) in paragraph at lines 424--424
+\OT1/cmss/m/n/10.95 may re-quire an in-creased stack size. See
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[21] [22] <images/compact.png, id=510, 526.96875pt x 242.40562pt>
+File: images/compact.png Graphic file (type png)
+
+<use images/compact.png>
+Package pdftex.def Info: images/compact.png used on input line 456.
+(pdftex.def)             Requested size: 341.44814pt x 170.72583pt.
+
+<images/scatter.png, id=511, 525.46312pt x 242.40562pt>
+File: images/scatter.png Graphic file (type png)
+
+<use images/scatter.png>
+Package pdftex.def Info: images/scatter.png used on input line 463.
+(pdftex.def)             Requested size: 341.44275pt x 170.72583pt.
+ [23 <./images/compact.png> <./images/scatter.png>]
+<images/advisor.png, id=525, 785.93625pt x 475.7775pt>
+File: images/advisor.png Graphic file (type png)
+
+<use images/advisor.png>
+Package pdftex.def Info: images/advisor.png used on input line 477.
+(pdftex.def)             Requested size: 426.79773pt x 369.89983pt.
+
+
+LaTeX Font Warning: Font shape `OMS/cmss/bx/n' undefined
+(Font)              using `OMS/cmss/m/n' instead on input line 481.
+
+<images/VTune.png, id=527, 445.665pt x 268.00125pt>
+File: images/VTune.png Graphic file (type png)
+ <use images/VTune.png>
+Package pdftex.def Info: images/VTune.png used on input line 486.
+(pdftex.def)             Requested size: 426.79309pt x 369.883pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[24 <./images/advisor.png>]
+
+LaTeX Warning: Reference `allinea' on page 25 undefined on input line 499.
+
+<images/allinea.png, id=535, 800.9925pt x 411.03563pt>
+File: images/allinea.png Graphic file (type png)
+
+<use images/allinea.png>
+Package pdftex.def Info: images/allinea.png used on input line 503.
+(pdftex.def)             Requested size: 426.79732pt x 369.88474pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (chapter4.tex [25 <./images/VTune.png>] [26 <./images/allinea.png>] [27]
+ 4.
+[28
+
+] [29] [30]
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+
+ []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Package caption Warning: \label without proper reference on input line 331.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package caption Warning: \label without proper reference on input line 282.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `Mesca1' on page 19 undefined on input line 133.
+LaTeX Warning: Reference `Mesca1' on page 31 undefined on input line 140.
 
 
-<images/fig_dsfdm/fig_cube_homogeneous_isotropic.pdf, id=345, 614.295pt x 794.9
-7pt>
-File: images/fig_dsfdm/fig_cube_homogeneous_isotropic.pdf Graphic file (type pd
-f)
- <use images/fig_dsfdm/fig_cube_homogeneous_isotropic.pdf>
-Package pdftex.def Info: images/fig_dsfdm/fig_cube_homogeneous_isotropic.pdf us
-ed on input line 136.
-(pdftex.def)             Requested size: 328.82706pt x 425.54129pt.
+Package caption Warning: \label without proper reference on input line 282.
+See the caption package documentation for explanation.
 
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 142.
+LaTeX Warning: Reference `Mesca1' on page 31 undefined on input line 143.
 
 
-<images/fig_dsfdm/fig_rec_snap_homogeneous_isotropic.pdf, id=346, 614.295pt x 7
-94.97pt>
-File: images/fig_dsfdm/fig_rec_snap_homogeneous_isotropic.pdf Graphic file (typ
-e pdf)
- <use images/fig_dsfdm/fig_rec_snap_homogeneous_isotropic.pdf>
-Package pdftex.def Info: images/fig_dsfdm/fig_rec_snap_homogeneous_isotropic.pd
-f used on input line 144.
-(pdftex.def)             Requested size: 328.82706pt x 425.54129pt.
+Underfull \hbox (badness 10000) in paragraph at lines 142--180
 
+ []
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 149.
-
-
-<images/fig_dsfdm/fig_rec_log_homogeneous_isotropic.pdf, id=347, 614.295pt x 79
-4.97pt>
-File: images/fig_dsfdm/fig_rec_log_homogeneous_isotropic.pdf Graphic file (type
- pdf)
- <use images/fig_dsfdm/fig_rec_log_homogeneous_isotropic.pdf>
-Package pdftex.def Info: images/fig_dsfdm/fig_rec_log_homogeneous_isotropic.pdf
- used on input line 151.
-(pdftex.def)             Requested size: 328.82706pt x 425.54129pt.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 156.
-
-
-<images/fig_dsfdm/fig1_log_homogeneous_isotropic.pdf, id=348, 614.295pt x 794.9
-7pt>
-File: images/fig_dsfdm/fig1_log_homogeneous_isotropic.pdf Graphic file (type pd
-f)
- <use images/fig_dsfdm/fig1_log_homogeneous_isotropic.pdf>
-Package pdftex.def Info: images/fig_dsfdm/fig1_log_homogeneous_isotropic.pdf us
-ed on input line 158.
-(pdftex.def)             Requested size: 328.82706pt x 425.54129pt.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 163.
-
-
-<images/fig_dsfdm/fig2_log_homogeneous_isotropic.pdf, id=349, 614.295pt x 794.9
-7pt>
-File: images/fig_dsfdm/fig2_log_homogeneous_isotropic.pdf Graphic file (type pd
-f)
- <use images/fig_dsfdm/fig2_log_homogeneous_isotropic.pdf>
-Package pdftex.def Info: images/fig_dsfdm/fig2_log_homogeneous_isotropic.pdf us
-ed on input line 165.
-(pdftex.def)             Requested size: 328.82706pt x 425.54129pt.
- [19]
-
-LaTeX Warning: Reference `TimeMPIlog1' on page 20 undefined on input line 173.
-
-<images/TimeLU.png, id=368, 578.16pt x 433.62pt>
+[31] <images/TimeLU.png, id=623, 578.16pt x 433.62pt>
 File: images/TimeLU.png Graphic file (type png)
  <use images/TimeLU.png>
-Package pdftex.def Info: images/TimeLU.png used on input line 210.
+Package pdftex.def Info: images/TimeLU.png used on input line 186.
 (pdftex.def)             Requested size: 328.82706pt x 246.61679pt.
 
-<images/TimeLU2.png, id=369, 578.16pt x 433.62pt>
-File: images/TimeLU2.png Graphic file (type png)
- <use images/TimeLU2.png>
-Package pdftex.def Info: images/TimeLU2.png used on input line 216.
-(pdftex.def)             Requested size: 328.82706pt x 246.61679pt.
+<images/TimeMPIlog.png, id=624, 578.16pt x 433.62pt>
+File: images/TimeMPIlog.png Graphic file (type png)
 
-<images/TimeMPIlog1.png, id=370, 578.16pt x 433.62pt>
-File: images/TimeMPIlog1.png Graphic file (type png)
-
-<use images/TimeMPIlog1.png>
-Package pdftex.def Info: images/TimeMPIlog1.png used on input line 223.
+<use images/TimeMPIlog.png>
+Package pdftex.def Info: images/TimeMPIlog.png used on input line 192.
 (pdftex.def)             Requested size: 328.82706pt x 246.61679pt.
 
 
-LaTeX Warning: Float too large for page by 169.42038pt on input line 228.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/TimeMescaLU.png, id=371, 578.16pt x 433.62pt>
+[32]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[33 <./images/TimeLU.png> <./images/TimeMPIlog.png>]
+<images/TimeMescaLU.png, id=648, 578.16pt x 433.62pt>
 File: images/TimeMescaLU.png Graphic file (type png)
 
 <use images/TimeMescaLU.png>
-Package pdftex.def Info: images/TimeMescaLU.png used on input line 233.
+Package pdftex.def Info: images/TimeMescaLU.png used on input line 232.
 (pdftex.def)             Requested size: 328.82706pt x 246.61679pt.
 
-<images/TimeMescaMPIlog.png, id=372, 578.16pt x 433.62pt>
+<images/TimeMescaMPIlog.png, id=649, 578.16pt x 433.62pt>
 File: images/TimeMescaMPIlog.png Graphic file (type png)
 
 <use images/TimeMescaMPIlog.png>
-Package pdftex.def Info: images/TimeMescaMPIlog.png used on input line 239.
-(pdftex.def)             Requested size: 328.82706pt x 246.61679pt.
-
-<images/memoryMPI.png, id=373, 578.16pt x 433.62pt>
-File: images/memoryMPI.png Graphic file (type png)
- <use images/memoryMPI.png>
-Package pdftex.def Info: images/memoryMPI.png used on input line 248.
-(pdftex.def)             Requested size: 328.82706pt x 246.61679pt.
-
-<images/MemoryMPIlog.png, id=374, 578.16pt x 433.62pt>
-File: images/MemoryMPIlog.png Graphic file (type png)
-
-<use images/MemoryMPIlog.png>
-Package pdftex.def Info: images/MemoryMPIlog.png used on input line 254.
-(pdftex.def)             Requested size: 328.82706pt x 246.61679pt.
-
-<images/memoryMescaMPI.png, id=375, 578.16pt x 433.62pt>
-File: images/memoryMescaMPI.png Graphic file (type png)
-
-<use images/memoryMescaMPI.png>
-Package pdftex.def Info: images/memoryMescaMPI.png used on input line 263.
-(pdftex.def)             Requested size: 328.82706pt x 246.61679pt.
-
-<images/MemoryMescaMPIlog.png, id=376, 578.16pt x 433.62pt>
-File: images/MemoryMescaMPIlog.png Graphic file (type png)
-
-<use images/MemoryMescaMPIlog.png>
-Package pdftex.def Info: images/MemoryMescaMPIlog.png used on input line 269.
+Package pdftex.def Info: images/TimeMescaMPIlog.png used on input line 238.
 (pdftex.def)             Requested size: 328.82706pt x 246.61679pt.
 
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 278.
+LaTeX Warning: Reference `Comparison_Mesca_and_CN1' on page 34 undefined on inp
+ut line 244.
 
-<images/TimeThreads.png, id=377, 578.16pt x 433.62pt>
+<images/Percentage_of_TimeLUCN.png, id=654, 578.16pt x 433.62pt>
+File: images/Percentage_of_TimeLUCN.png Graphic file (type png)
+
+<use images/Percentage_of_TimeLUCN.png>
+Package pdftex.def Info: images/Percentage_of_TimeLUCN.png used on input line 2
+49.
+(pdftex.def)             Requested size: 328.82706pt x 246.61679pt.
+
+<images/Percentage_of_TimeLU_Mesca.png, id=655, 578.16pt x 433.62pt>
+File: images/Percentage_of_TimeLU_Mesca.png Graphic file (type png)
+
+<use images/Percentage_of_TimeLU_Mesca.png>
+Package pdftex.def Info: images/Percentage_of_TimeLU_Mesca.png used on input li
+ne 255.
+(pdftex.def)             Requested size: 328.82706pt x 246.61679pt.
+
+<images/Comparison_Mesca_and_CN1.png, id=656, 578.16pt x 433.62pt>
+File: images/Comparison_Mesca_and_CN1.png Graphic file (type png)
+
+<use images/Comparison_Mesca_and_CN1.png>
+Package pdftex.def Info: images/Comparison_Mesca_and_CN1.png used on input line
+ 262.
+(pdftex.def)             Requested size: 328.82706pt x 246.61679pt.
+
+
+LaTeX Warning: Float too large for page by 169.42038pt on input line 266.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/TimeThreads.png, id=658, 578.16pt x 433.62pt>
 File: images/TimeThreads.png Graphic file (type png)
 
 <use images/TimeThreads.png>
-Package pdftex.def Info: images/TimeThreads.png used on input line 280.
-(pdftex.def)             Requested size: 352.31624pt x 264.23654pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 285--288
-
- []
-
-[20] [21 <./images/fig_dsfdm/fig_cube_homogeneous_isotropic.pdf>] [22 <./images
-/fig_dsfdm/fig_rec_snap_homogeneous_isotropic.pdf>] [23 <./images/fig_dsfdm/fig
-_rec_log_homogeneous_isotropic.pdf>] [24 <./images/fig_dsfdm/fig1_log_homogeneo
-us_isotropic.pdf>] [25 <./images/fig_dsfdm/fig2_log_homogeneous_isotropic.pdf>]
-[26 <./images/TimeLU.png> <./images/TimeLU2.png> <./images/TimeMPIlog1.png>]
-[27 <./images/TimeMescaLU.png> <./images/TimeMescaMPIlog.png>] [28 <./images/me
-moryMPI.png> <./images/MemoryMPIlog.png>] [29 <./images/memoryMescaMPI.png> <./
-images/MemoryMescaMPIlog.png>]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 289.
-
-<images/SpeedupMesca.png, id=488, 578.16pt x 433.62pt>
-File: images/SpeedupMesca.png Graphic file (type png)
-
-<use images/SpeedupMesca.png>
-Package pdftex.def Info: images/SpeedupMesca.png used on input line 291.
+Package pdftex.def Info: images/TimeThreads.png used on input line 272.
 (pdftex.def)             Requested size: 352.31624pt x 264.23654pt.
 
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 295.
-
-<images/EffciencyMesca.png, id=489, 578.16pt x 433.62pt>
-File: images/EffciencyMesca.png Graphic file (type png)
-
-<use images/EffciencyMesca.png>
-Package pdftex.def Info: images/EffciencyMesca.png used on input line 297.
-(pdftex.def)             Requested size: 352.31624pt x 264.23654pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 304--307
-
- []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 310.
-
-<images/Mesca_Time.png, id=490, 722.7pt x 433.62pt>
-File: images/Mesca_Time.png Graphic file (type png)
-
-<use images/Mesca_Time.png>
-Package pdftex.def Info: images/Mesca_Time.png used on input line 312.
-(pdftex.def)             Requested size: 352.31624pt x 211.39055pt.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 316.
-
-<images/Mesca_Memory.png, id=491, 722.7pt x 433.62pt>
-File: images/Mesca_Memory.png Graphic file (type png)
-
-<use images/Mesca_Memory.png>
-Package pdftex.def Info: images/Mesca_Memory.png used on input line 318.
-(pdftex.def)             Requested size: 352.31624pt x 211.39055pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 322--325
-
- []
-
-
-Overfull \hbox (219.39879pt too wide) in paragraph at lines 332--339
+Overfull \hbox (219.39879pt too wide) in paragraph at lines 283--290
  [][] 
  []
 
+[34] [35 <./images/TimeMescaLU.png> <./images/TimeMescaMPIlog.png>]
+<images/memoryMPI.png, id=680, 578.16pt x 433.62pt>
+File: images/memoryMPI.png Graphic file (type png)
+ <use images/memoryMPI.png>
+Package pdftex.def Info: images/memoryMPI.png used on input line 298.
+(pdftex.def)             Requested size: 328.82706pt x 246.61679pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 343--346
+<images/MemoryMPIlog.png, id=681, 578.16pt x 433.62pt>
+File: images/MemoryMPIlog.png Graphic file (type png)
 
- []
+<use images/MemoryMPIlog.png>
+Package pdftex.def Info: images/MemoryMPIlog.png used on input line 304.
+(pdftex.def)             Requested size: 328.82706pt x 246.61679pt.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 347--348
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
- []
+<images/memoryMescaMPI.png, id=682, 578.16pt x 433.62pt>
+File: images/memoryMescaMPI.png Graphic file (type png)
+
+<use images/memoryMescaMPI.png>
+Package pdftex.def Info: images/memoryMescaMPI.png used on input line 313.
+(pdftex.def)             Requested size: 328.82706pt x 246.61679pt.
+
+<images/MemoryMescaMPIlog.png, id=683, 578.16pt x 433.62pt>
+File: images/MemoryMescaMPIlog.png Graphic file (type png)
+
+<use images/MemoryMescaMPIlog.png>
+Package pdftex.def Info: images/MemoryMescaMPIlog.png used on input line 319.
+(pdftex.def)             Requested size: 328.82706pt x 246.61679pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/SpeedupMesca.png, id=685, 578.16pt x 433.62pt>
+File: images/SpeedupMesca.png Graphic file (type png)
+
+<use images/SpeedupMesca.png>
+Package pdftex.def Info: images/SpeedupMesca.png used on input line 330.
+(pdftex.def)             Requested size: 352.31624pt x 264.23654pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/Comparison_Mesca_and_CN2.png, id=687, 578.16pt x 433.62pt>
+File: images/Comparison_Mesca_and_CN2.png Graphic file (type png)
+
+<use images/Comparison_Mesca_and_CN2.png>
+Package pdftex.def Info: images/Comparison_Mesca_and_CN2.png used on input line
+ 338.
+(pdftex.def)             Requested size: 352.31624pt x 264.23654pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/MescaTime.png, id=690, 722.7pt x 578.16pt>
+File: images/MescaTime.png Graphic file (type png)
+ <use images/MescaTime.png>
+Package pdftex.def Info: images/MescaTime.png used on input line 354.
+(pdftex.def)             Requested size: 375.80542pt x 300.64493pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/MescaMemory.png, id=691, 722.7pt x 578.16pt>
+File: images/MescaMemory.png Graphic file (type png)
+
+<use images/MescaMemory.png>
+Package pdftex.def Info: images/MescaMemory.png used on input line 360.
+(pdftex.def)             Requested size: 375.80542pt x 300.64493pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/weakScaleNodes.png, id=694, 578.16pt x 433.62pt>
+File: images/weakScaleNodes.png Graphic file (type png)
+
+<use images/weakScaleNodes.png>
+Package pdftex.def Info: images/weakScaleNodes.png used on input line 369.
+(pdftex.def)             Requested size: 375.80542pt x 281.84966pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/weakScaleMesca.png, id=695, 578.16pt x 433.62pt>
+File: images/weakScaleMesca.png Graphic file (type png)
+
+<use images/weakScaleMesca.png>
+Package pdftex.def Info: images/weakScaleMesca.png used on input line 375.
+(pdftex.def)             Requested size: 375.80542pt x 281.84966pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -976,25 +1161,162 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (chapter5.tex [30 <./images/TimeThreads.png>] [31 <./images/SpeedupMesca.png>
- <./images/EffciencyMesca.png>] [32 <./images/Mesca_Time.png> <./images/Mesca_M
-emory.png>] [33]) (acknowledgement.tex [34
 
-]) (Senegal-Essay-Template-en.bbl
-[35
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 256.
- [36
+) (chapter5.tex [36] [37] [38 <./images/Percentage_of_TimeLUCN.png> <./images/P
+ercentage_of_TimeLU_Mesca.png> <./images/Comparison_Mesca_and_CN1.png>]
+[39 <./images/TimeThreads.png>] [40 <./images/memoryMPI.png> <./images/MemoryMP
+Ilog.png>] [41 <./images/memoryMescaMPI.png> <./images/MemoryMescaMPIlog.png>]
+[42 <./images/SpeedupMesca.png> <./images/Comparison_Mesca_and_CN2.png>]
+[43 <./images/MescaTime.png>] [44 <./images/MescaMemory.png> <./images/weakScal
+eNodes.png>] [45 <./images/weakScaleMesca.png>]
+ 5.
+) (acknowledgement.tex [46
+
+]) (appendix.tex [47
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 256.
+<images/dsfdm/fig_cube_homogeneous_isotropic.pdf, id=772, 614.295pt x 794.97pt>
+File: images/dsfdm/fig_cube_homogeneous_isotropic.pdf Graphic file (type pdf)
+<use images/dsfdm/fig_cube_homogeneous_isotropic.pdf>
+Package pdftex.def Info: images/dsfdm/fig_cube_homogeneous_isotropic.pdf used o
+n input line 5.
+(pdftex.def)             Requested size: 352.31624pt x 455.9397pt.
+
+<images/dsfdm/fig_rec_snap_homogeneous_isotropic.pdf, id=773, 614.295pt x 794.9
+7pt>
+File: images/dsfdm/fig_rec_snap_homogeneous_isotropic.pdf Graphic file (type pd
+f)
+ <use images/dsfdm/fig_rec_snap_homogeneous_isotropic.pdf>
+Package pdftex.def Info: images/dsfdm/fig_rec_snap_homogeneous_isotropic.pdf us
+ed on input line 11.
+(pdftex.def)             Requested size: 352.31624pt x 455.9397pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+<images/dsfdm/fig_rec_log_homogeneous_isotropic.pdf, id=774, 614.295pt x 794.97
+pt>
+File: images/dsfdm/fig_rec_log_homogeneous_isotropic.pdf Graphic file (type pdf
+)
+ <use images/dsfdm/fig_rec_log_homogeneous_isotropic.pdf>
+Package pdftex.def Info: images/dsfdm/fig_rec_log_homogeneous_isotropic.pdf use
+d on input line 18.
+(pdftex.def)             Requested size: 352.31624pt x 455.9397pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+<images/dsfdm/fig1_log_homogeneous_isotropic.pdf, id=775, 614.295pt x 794.97pt>
+File: images/dsfdm/fig1_log_homogeneous_isotropic.pdf Graphic file (type pdf)
+<use images/dsfdm/fig1_log_homogeneous_isotropic.pdf>
+Package pdftex.def Info: images/dsfdm/fig1_log_homogeneous_isotropic.pdf used o
+n input line 27.
+(pdftex.def)             Requested size: 352.31624pt x 455.9397pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+<images/dsfdm/fig2_log_homogeneous_isotropic.pdf, id=776, 614.295pt x 794.97pt>
+File: images/dsfdm/fig2_log_homogeneous_isotropic.pdf Graphic file (type pdf)
+<use images/dsfdm/fig2_log_homogeneous_isotropic.pdf>
+Package pdftex.def Info: images/dsfdm/fig2_log_homogeneous_isotropic.pdf used o
+n input line 34.
+(pdftex.def)             Requested size: 352.31624pt x 455.9397pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/MPIProfInca.png, id=777, 722.7pt x 433.62pt>
+File: images/MPIProfInca.png Graphic file (type png)
+
+<use images/MPIProfInca.png>
+Package pdftex.def Info: images/MPIProfInca.png used on input line 43.
+(pdftex.def)             Requested size: 328.82706pt x 197.29741pt.
+
+<images/MPIProfMesc.png, id=778, 578.16pt x 433.62pt>
+File: images/MPIProfMesc.png Graphic file (type png)
+
+<use images/MPIProfMesc.png>
+Package pdftex.def Info: images/MPIProfMesc.png used on input line 49.
+(pdftex.def)             Requested size: 328.82706pt x 246.61679pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/PieInca2process.png, id=779, 433.62pt x 289.08pt>
+File: images/PieInca2process.png Graphic file (type png)
+
+<use images/PieInca2process.png>
+Package pdftex.def Info: images/PieInca2process.png used on input line 58.
+(pdftex.def)             Requested size: 328.82706pt x 219.22668pt.
+
+<images/PieMesca2process.png, id=780, 433.62pt x 289.08pt>
+File: images/PieMesca2process.png Graphic file (type png)
+
+<use images/PieMesca2process.png>
+Package pdftex.def Info: images/PieMesca2process.png used on input line 64.
+(pdftex.def)             Requested size: 328.82706pt x 219.22668pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/PieInca4process.png, id=781, 433.62pt x 289.08pt>
+File: images/PieInca4process.png Graphic file (type png)
+
+<use images/PieInca4process.png>
+Package pdftex.def Info: images/PieInca4process.png used on input line 74.
+(pdftex.def)             Requested size: 328.82706pt x 219.22668pt.
+
+<images/PieMesca4process.png, id=782, 433.62pt x 289.08pt>
+File: images/PieMesca4process.png Graphic file (type png)
+
+<use images/PieMesca4process.png>
+Package pdftex.def Info: images/PieMesca4process.png used on input line 80.
+(pdftex.def)             Requested size: 328.82706pt x 219.22668pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/PieInca8process.png, id=783, 433.62pt x 289.08pt>
+File: images/PieInca8process.png Graphic file (type png)
+
+<use images/PieInca8process.png>
+Package pdftex.def Info: images/PieInca8process.png used on input line 90.
+(pdftex.def)             Requested size: 328.82706pt x 219.22668pt.
+File: images/PieMesca4process.png Graphic file (type png)
+ <use images/PieMesca4process.png>
+Package pdftex.def Info: images/PieMesca4process.png used on input line 96.
+(pdftex.def)             Requested size: 328.82706pt x 219.22668pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (Senegal-Essay-Template-en.bbl [48
+
+ <./images/dsfdm/fig_cube_homogeneous_isotropic.pdf>] [49 <./images/dsfdm/fig_r
+ec_snap_homogeneous_isotropic.pdf>]
+[50 <./images/dsfdm/fig_rec_log_homogeneous_isotropic.pdf>] [51 <./images/dsfdm
+/fig1_log_homogeneous_isotropic.pdf>] [52 <./images/dsfdm/fig2_log_homogeneous_
+isotropic.pdf>] [53 <./images/MPIProfInca.png> <./images/MPIProfMesc.png>]
+[54 <./images/PieInca2process.png> <./images/PieMesca2process.png>] [55 <./imag
+es/PieInca4process.png> <./images/PieMesca4process.png>] [56 <./images/PieInca8
+process.png>] [57
+
+])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 290.
+ [58]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 290.
  (Senegal-Essay-Template-en.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 256.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 256.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 290.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 290.
 Package rerunfilecheck Info: File `Senegal-Essay-Template-en.out' has not chang
 ed.
-(rerunfilecheck)             Checksum: 9E961801CE51CE0D4861B4F9A2588CDC;1494.
+(rerunfilecheck)             Checksum: 64BEBD0FD8EFA97F4B74E1B78F22D0E2;1332.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1005,16 +1327,16 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 256.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 290.
  ) 
 Here is how much of TeX's memory you used:
- 8761 strings out of 493323
- 131722 string characters out of 3139060
- 336714 words of memory out of 3000000
- 11942 multiletter control sequences out of 15000+200000
- 18536 words of font info for 72 fonts, out of 3000000 for 9000
+ 11237 strings out of 493323
+ 165112 string characters out of 3139060
+ 408745 words of memory out of 3000000
+ 14237 multiletter control sequences out of 15000+200000
+ 21764 words of font info for 86 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,11n,40p,1257b,540s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,20n,51p,1760b,2165s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKT
@@ -1022,20 +1344,23 @@ eX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
 msfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmssi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmssi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-msy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Senegal-Essay-Template-en.pdf (39 pages, 3181139 bytes).
+/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmss9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmssi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmssi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
+y10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Senegal-Essay-Template-en.pdf (61 pages, 4153418 bytes).
 PDF statistics:
- 644 PDF objects out of 1000 (max. 8388607)
- 145 named destinations out of 1000 (max. 500000)
- 365 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1028 PDF objects out of 1200 (max. 8388607)
+ 273 named destinations out of 1000 (max. 500000)
+ 449 words of extra memory for PDF output out of 10000 (max. 10000000)
 

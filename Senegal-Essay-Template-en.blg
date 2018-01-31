@@ -1,45 +1,12 @@
-This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
-The top-level auxiliary file: Senegal-Essay-Template-en.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: Senegal-Essay-Template-en.aux
 The style file: amsalpha.bst
 Database file #1: Senegal-Essay-Template.bib
-You've used 10 entries,
-            2624 wiz_defined-function locations,
-            629 strings with 5853 characters,
-and the built_in function-call counts, 3471 in all, are:
-= -- 309
-> -- 118
-< -- 11
-+ -- 36
-- -- 33
-* -- 247
-:= -- 540
-add.period$ -- 10
-call.type$ -- 10
-change.case$ -- 54
-chr.to.int$ -- 10
-cite$ -- 10
-duplicate$ -- 180
-empty$ -- 303
-format.name$ -- 51
-if$ -- 727
-int.to.chr$ -- 1
-int.to.str$ -- 0
-missing$ -- 16
-newline$ -- 40
-num.names$ -- 34
-pop$ -- 79
-preamble$ -- 1
-purify$ -- 63
-quote$ -- 0
-skip$ -- 128
-stack$ -- 0
-substring$ -- 181
-swap$ -- 29
-text.length$ -- 11
-text.prefix$ -- 8
-top$ -- 0
-type$ -- 72
-warning$ -- 0
-while$ -- 29
-width$ -- 11
-write$ -- 119
+Warning--I didn't find a database entry for "https://software.intel.com/en-us/intel-cplusplus-compiler-17.0-user-and-reference-guide"
+Warning--to sort, need author, editor, or key in Rubin
+Warning--missing publisher in Brossier2010
+Warning--missing publisher in Barkved2010
+Warning--missing pages in Brossier2014
+Warning--can't use both author and editor fields in Hager2010
+Warning--missing author and editor in Rubin
+Warning--missing author in Pacheco2011
+(There were 8 warnings)

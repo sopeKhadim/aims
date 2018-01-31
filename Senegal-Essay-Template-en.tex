@@ -36,11 +36,43 @@
 \urlstyle{same}
 % \usepackage{listings} % more flexible and complicated 
                         % than moreverb and algorithm
- 
+\usepackage{tabularx}
+\usepackage{makecell}
+\usepackage{listings} 
 \usepackage[latin1]{inputenc}
 \usepackage{subcaption}  
 \usepackage{lipsum}
 \usepackage{mwe}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage{color}
+
+ %% Listing code style 
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+ 
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+ 
+\lstset{style=mystyle}
 % To include accented French Characters
 %\usepackage[french]{babel}
 %\usepackage{ucs}
@@ -135,7 +167,7 @@
 \title{Optimization of Seismic Imaging Code, DSFDM/FFWI (Direct Solver Finite Difference Method / Frequency Full Waveform Inversion), on a Shared Next Generation Node, MESCA II}
 % Your name must be in English Capitalisation with no comma, 
 % and the Family name comes last.
-\author{Djibril Mboup (djibril.mboup@aims-senegal.org)\\
+\author{\textbf{Djibril MBOUP} (djibril.mboup@aims-senegal.org)\\\\
 % Igbo, French students, put your special characters above.
 % Arabic students can add their name in Arabic letters below, 
 % after the english one
@@ -156,12 +188,13 @@ Senegal\\\\
 % Example2
 % Supervised by Doctor Ingrid Rewitzk
 % University of Stellenbosch, South Africa
-{\small Supervised by: Abdou Khadr Gaye and Benjamin Pajot}\\
-{\small ATOS GDC, Senegal }%
-{\small and ATOS, France}%
+{\small Supervised by: }\\
+{\small Benjamin PAJOT, Bull ATOS, France} \\
+{\small Abdou Khadir GAYE, ATOS GDC, Senegal} \\
+%
 % Don't put the department, it becomes too long.
 }
-\date{{\small 26 August 2017}\\%
+\date{{\small 28 January 2018}\\%
   {\scriptsize\it Submitted in Partial Fulfillment of 
     a Masters II at AIMS}\\%
   \vspace{3cm}{\includegraphics[width = 12cm]{images/aimssn-logo.jpg}}}
@@ -235,6 +268,7 @@ Senegal\\\\
 %-----------------------------------------------------------------------------
 % See the acknowledgement.tex file and follow the instructions there.
 \input{acknowledgement}
+\input{appendix}
 %-----------------------------------------------------------------------------
 % Note the errata page is not for now, it is for use during the examination.
 % Not that you're going to have any errata.

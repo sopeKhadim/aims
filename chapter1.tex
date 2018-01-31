@@ -1,5 +1,14 @@
-\chapter*{Introduction}
+\chapter{Introduction}
 \label{chp: chap1}
- 
+
+The last decade has witnessed real progress in the geophysical research area. This fact is due to the development of new approach in seismic modelling such as \textit{Full Waveform Inversion} (FWI), and the opportunity that offers the \textit{High Performance Computing} (HPC). The rapid increasing of the HPC technologies allows to deal with large test cases with significant performance. In this insight, a group of researcher working in Geoazur laboratory and \textit{Observatory of C\^{o}te d'Azur} (OCA) has developed advanced seismic imaging methods. To share the benefit of their work in the scientific community, they make in open-source distribution many of their packages. At the same time, These researchers are involved the SEISCOPE\footnote{\url{http://seiscope2.osug.fr}} consortium sponsored by 9 companies Gas and Oil from which their work is promoted. 
+
+In this perspective, the SEISCOPE team has developed an efficient code for full waveform inversion, called DSFDM/FFWI (\textit{Direct Solver Finite Difference Method / Frequency FWI}). The DSFDM/FFWI code was applied successfully in real seismic dataset collected in ocean-bottom cable data from the Valhall oil field (North Sea) in the visco-acoustic \textit{vertical transverse isotropic} (VTI) approximation \cite{Operto2015,Amestoy2016}. For its running, this code uses different packages especially MUMPS (\textit{MULtifrontal Massively Parallel sparse direct Solver}) to solve the wave propagation equation with direct-solver method which is the most expensive part of the inversion process. 
+
+The modelling in a frequency domain is a promising method because it naturally takes into account the attenuation, a physical characteristic that can greatly impact the seismic imaging quality in certain cases,  but also because of its speed of calculation for simulations with multiple right-hand side. The backwards of this method, which has prevented its expansion rapidly, is its memory consumption which limits it to medium-sized use cases.
+
+Bull, a company of Atos group, has developed its second generation of server x86 with large shared memory, called MESCA-II (\textit{Multiple Environments on a Scalable Csi-based Architecture}). Technically, a MESCA-II node can have 8 sockets of Intel$^{\mbox{\scriptsize{\textregistered}}}$ Xeon$^{\mbox{\scriptsize{\textregistered}}}$ processor family with 3 Terabytes of memory per sockets. MESCA-II can theoretically offer 24 TB of shared memory . Thus, MESCA-II node give a great opportunity to make performance studies on DSFDM/FFWI including scalability studies and code optimization.
+
+In this report, we will give a brief review of seismic imaging and the context which is used. We study, in chapter \ref{HPC1},   how \textit{High Performance Computing} (HPC) is and its use of the large simulation problems. Finally, we study the performance of DSFDM/FFWI code in MESCA-II node.
 
 
